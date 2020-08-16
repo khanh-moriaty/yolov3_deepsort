@@ -96,6 +96,9 @@ while True:
     t1 = time.time()
 
     boxes, scores, classes, nums = yolo.predict(img_in)
+    print('boxes',boxes)
+    print('scores',scores)
+    print('classes',classes)
 
     classes = classes[0]
     names = []
@@ -107,6 +110,9 @@ while True:
 
     detections = [Detection(bbox, score, class_name, feature) for bbox, score, class_name, feature in
                   zip(converted_boxes, scores[0], names, features)]
+
+    print('detections',detections)
+    break
 
     boxs = np.array([d.tlwh for d in detections])
     scores = np.array([d.confidence for d in detections])
