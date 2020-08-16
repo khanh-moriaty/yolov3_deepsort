@@ -24,7 +24,7 @@ from shapely.geometry import Point, Polygon
 
 class_names = [c.strip() for c in open('./data/labels/obj.names').readlines()]
 yolo = YoloV3(classes=len(class_names))
-yolo.load_weights('./weights/yolov3_12-8.tf')
+yolo.load_weights('./weights/yolov3.tf')
 
 max_cosine_distance = 0.5
 nn_budget = None
