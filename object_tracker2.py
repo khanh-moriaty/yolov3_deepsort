@@ -6,6 +6,7 @@ FLAGS(sys.argv)
 import time
 import numpy as np
 import cv2
+import os
 import matplotlib.pyplot as plt
 import glob
 
@@ -35,12 +36,13 @@ encoder = gdet.create_box_encoder(model_filename, batch_size=1)
 metric = nn_matching.NearestNeighborDistanceMetric('cosine', max_cosine_distance, nn_budget)
 tracker = Tracker(metric)
 
-vid = cv2.VideoCapture('./data/video/cam_18_2p.mp4')
+VIDEO_PATH = './data/video/cam_18_2p.mp4'
+vid = cv2.VideoCapture(VIDEO_PATH)
 vid_fps = vid.get(cv2.CAP_PROP_FPS)
 codec = cv2.VideoWriter_fourcc(*'XVID')
 vid_fps =int(vid.get(cv2.CAP_PROP_FPS))
 vid_width,vid_height = int(vid.get(cv2.CAP_PROP_FRAME_WIDTH)), int(vid.get(cv2.CAP_PROP_FRAME_HEIGHT))
-out = cv2.VideoWriter('./data/video/cam_18_2p_test1.avi', codec, vid_fps, (vid_width, vid_height))
+out = cv2.VideoWriter('./data/video/cam_18_2p_out.mp4', codec, vid_fps, (vid_width, vid_height))
 
 from _collections import deque
 pts = [deque(maxlen=200) for _ in range(5000)]
@@ -94,13 +96,44 @@ def detect_with_YOLOv3(img):
     classes = classes[0]
     return boxes, scores, classes
 
+def load_detection_output(output_path, video_path, frame_id):
+    frame_base_name = os.path.basename(video_path)
+    frame_base_name = os.path.splitext(frame_base_name)[0] + "_{:05d}.txt"
+    frame_name = frame_base_name.format(frame_id)
+    frame_path = os.path.join(output_path, frame_name)
+    
+    boxes = []
+    scores = []
+    classes = []
+
+    with open(frame_path, 'r') as fi:
+        lines = fi.read().splitlines()
+        for line in lines:
+            content = line.split()
+            classes.append(int(content[0]))
+            boxes.append([float(x) for x in content[1:5]])
+            scores.append(float(content[5]))
+            
+    boxes = np.array(boxes)
+    scores = np.array(scores)
+    classes = np.array(classes)
+
+    return boxes, scores, classes
+
+
+OUTPUT_PATH = "./frames"
 while True:
     _, img = vid.read()
     if img is None:
         print('Completed')
         break
+    frame_id = frame_id + 1
+    if(frame_id%(vid_fps) == 0):
+        sec = sec + 1
+    t1 = time.time()
 
-    boxes, scores, classes = detect_with_YOLOv3(img)
+    # boxes, scores, classes = detect_with_YOLOv3(img)
+    boxes, scores, classes = load_detection_output(OUTPUT_PATH, VIDEO_PATH, frame_id)
 
     names = []
     for i in range(len(classes)):
@@ -111,9 +144,6 @@ while True:
 
     detections = [Detection(bbox, score, class_name, feature) for bbox, score, class_name, feature in
                   zip(converted_boxes, scores, names, features)]
-
-    print('detections',detections)
-    break
 
     boxs = np.array([d.tlwh for d in detections])
     scores = np.array([d.confidence for d in detections])
@@ -170,13 +200,13 @@ while True:
                     (255,255,255), 2)
             if class_name == '1' or class_name == '2' or class_name == '3' or class_name == '4':
                 if class_name == '1':
-                  Xe_may.append(int(track.track_id))
+                    Xe_may.append(int(track.track_id))
                 elif class_name == '2':
-                  Xe_hoi.append(int(track.track_id))
+                    Xe_hoi.append(int(track.track_id))
                 elif class_name == '3':
-                  Xe_Khach.append(int(track.track_id))
+                    Xe_Khach.append(int(track.track_id))
                 elif class_name == '4':
-                  Xe_tai.append(int(track.track_id))
+                    Xe_tai.append(int(track.track_id))
                 counter.append(int(track.track_id))
                 current_count += 1
                 center = (int(((bbox[0]) + (bbox[2]))/2), int(((bbox[1])+(bbox[3]))/2))
@@ -186,10 +216,10 @@ while True:
                 
 
                 for j in range(1, len(pts[track.track_id])):
-                  if pts[track.track_id][j-1] is None or pts[track.track_id][j] is None:
-                    continue
-                  thickness = int(np.sqrt(64/float(j+1))*2)
-                  cv2.line(img, (pts[track.track_id][j-1]), (pts[track.track_id][j]), color, thickness)
+                    if pts[track.track_id][j-1] is None or pts[track.track_id][j] is None:
+                      continue
+                    thickness = int(np.sqrt(64/float(j+1))*2)
+                    cv2.line(img, (pts[track.track_id][j-1]), (pts[track.track_id][j]), color, thickness)
              
     #print("frame_id: ", frame_id, "\n", set(Xe_may))
     
@@ -217,9 +247,6 @@ while True:
     cv2.putText(img, "FPS: {:.2f}".format(fps), (0,30), 0, 1, (0,0,255), 2)
     out.write(img)
 
-    frame_id = frame_id + 1
-    if(frame_id%(vid_fps) == 0):
-      sec = sec + 1
     running = (sec/loong)*100
     print("running: {:.2f}%".format(running), "    fps: {:.2f} ".format(fps))
 
@@ -227,20 +254,20 @@ while True:
 
 def find_moi(a, b):
 
-  mois = [[731, 168], [526,566], [205, 424], [842,199]]  
-  index_a = 0
-  index_b = 2
-  min_a = Point(tuple(a[0])).distance(Point(tuple(mois[0])))
-  min_b = Point(tuple(b[0])).distance(Point(tuple(mois[int(len(mois)/2)])))
-  for i in range(0, int(len(mois)/2)):
-    if min_a > Point(tuple(a[0])).distance(Point(tuple(mois[i]))):
-      index_a = i
-      min_a = Point(tuple(a[0])).distance(Point(tuple(mois[i])))
-  for j in range(int(len(mois)/2), len(mois)):
-    if min_b > Point(tuple(b[0])).distance(Point(tuple(mois[j]))):
-      index_b = j
-      min_b = Point(tuple(b[0])).distance(Point(tuple(mois[j])))
-  return (index_a + 1), (index_b + 1), tuple(b[0])
+    mois = [[731, 168], [526,566], [205, 424], [842,199]]  
+    index_a = 0
+    index_b = 2
+    min_a = Point(tuple(a[0])).distance(Point(tuple(mois[0])))
+    min_b = Point(tuple(b[0])).distance(Point(tuple(mois[int(len(mois)/2)])))
+    for i in range(0, int(len(mois)/2)):
+      if min_a > Point(tuple(a[0])).distance(Point(tuple(mois[i]))):
+        index_a = i
+        min_a = Point(tuple(a[0])).distance(Point(tuple(mois[i])))
+    for j in range(int(len(mois)/2), len(mois)):
+      if min_b > Point(tuple(b[0])).distance(Point(tuple(mois[j]))):
+        index_b = j
+        min_b = Point(tuple(b[0])).distance(Point(tuple(mois[j])))
+    return (index_a + 1), (index_b + 1), tuple(b[0])
 
 def confirm_moi(index_a, index_b, center):
   if (index_a == 1 and index_b == 3):
