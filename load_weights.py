@@ -7,7 +7,7 @@ from yolov3_tf2.utils import load_darknet_weights
 flags.DEFINE_string('weights', 'weights/yolov3.weights', 'path to weights file')
 flags.DEFINE_string('output', 'weights/yolov3.tf', 'path to output')
 flags.DEFINE_boolean('tiny', False, 'yolov3 or yolov3-tiny')
-flags.DEFINE_integer('num_classes', 80, 'number of classes in the model')
+flags.DEFINE_integer('num_classes', 5, 'number of classes in the model')
 
 
 def main(_argv):
