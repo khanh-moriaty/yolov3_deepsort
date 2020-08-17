@@ -81,14 +81,7 @@ poly = Polygon(coord)
 checker1 = Polygon(check1)
 checker2 = Polygon(check2)
 
-
-
-while True:
-    _, img = vid.read()
-    if img is None:
-        print('Completed')
-        break
-
+def detect_with_YOLOv3(img):
     img_in = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     img_in = tf.expand_dims(img_in, 0)
     img_in = transform_images(img_in, 416)
@@ -96,20 +89,28 @@ while True:
     t1 = time.time()
 
     boxes, scores, classes, nums = yolo.predict(img_in)
-    print('boxes',boxes)
-    print('scores',scores)
-    print('classes',classes)
-
+    boxes = boxes[0]
+    scores = scores[0]
     classes = classes[0]
+    return boxes, scores, classes
+
+while True:
+    _, img = vid.read()
+    if img is None:
+        print('Completed')
+        break
+
+    boxes, scores, classes = detect_with_YOLOv3(img)
+
     names = []
     for i in range(len(classes)):
         names.append(class_names[int(classes[i])])
     names = np.array(names)
-    converted_boxes = convert_boxes(img, boxes[0])
+    converted_boxes = convert_boxes(img, boxes)
     features = encoder(img, converted_boxes)
 
     detections = [Detection(bbox, score, class_name, feature) for bbox, score, class_name, feature in
-                  zip(converted_boxes, scores[0], names, features)]
+                  zip(converted_boxes, scores, names, features)]
 
     print('detections',detections)
     break
