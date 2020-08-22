@@ -51,6 +51,8 @@ class KalmanFilter(object):
         # the model. This is a bit hacky.
         self._std_weight_position = 1. / 20
         self._std_weight_velocity = 1. / 160
+        self._std_weight_position = 1. / 12
+        self._std_weight_velocity = 1. / 100
 
     def initiate(self, measurement):
         """Create track from unassociated measurement.

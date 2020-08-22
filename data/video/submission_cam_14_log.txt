@@ -1,0 +1,3710 @@
+track_id:  1
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  2
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  3
+index_head = 2 index_tail = 2 MOI invalid, moi = -1
+track_id:  4
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  5
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 45 2 4 627 167
+track_id:  6
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  8
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  10
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  11
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 16 3 1 842 205
+track_id:  14
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  15
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 63 2 1 726 178
+track_id:  19
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  20
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  21
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 122 2 1 736 179
+track_id:  23
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 156 1 1 70 497
+track_id:  24
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 177 2 2 589 156
+track_id:  26
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 182 2 1 719 177
+track_id:  27
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  30
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 219 2 1 718 179
+track_id:  31
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 242 1 3 161 585
+track_id:  33
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 219 2 2 651 195
+track_id:  34
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 210 2 1 721 179
+track_id:  36
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  37
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  38
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 283 1 1 16 501
+track_id:  39
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 281 1 2 299 554
+track_id:  47
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  48
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 276 2 4 602 174
+track_id:  49
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 247 2 1 749 186
+track_id:  50
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 278 2 2 649 183
+track_id:  51
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 302 2 2 642 179
+track_id:  52
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 314 1 4 110 571
+track_id:  53
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 365 4 2 529 545
+track_id:  54
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  57
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 342 1 1 58 514
+track_id:  58
+track_id:  61
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 335 1 1 56 502
+track_id:  62
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 422 1 3 87 588
+track_id:  64
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  68
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 399 1 1 90 498
+track_id:  69
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 431 2 2 643 165
+track_id:  70
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 446 2 1 727 178
+track_id:  71
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 432 1 1 163 493
+track_id:  72
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  73
+track_id:  74
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 438 2 2 591 183
+track_id:  76
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 461 2 1 715 175
+track_id:  77
+track_id:  78
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 474 2 1 720 175
+track_id:  79
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  80
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 513 1 2 201 557
+track_id:  81
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 477 2 2 604 184
+track_id:  82
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  84
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 529 1 2 263 558
+track_id:  87
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 537 5 3 1225 265
+track_id:  90
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 578 1 1 51 499
+track_id:  92
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 576 1 1 110 495
+track_id:  93
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 626 2 1 722 178
+track_id:  94
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 642 2 1 714 180
+track_id:  95
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 652 1 1 61 512
+track_id:  96
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 654 2 1 729 179
+track_id:  97
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 657 3 1 798 206
+track_id:  100
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 663 2 1 648 182
+track_id:  101
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 677 2 2 599 187
+track_id:  102
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 1010 4 3 303 580
+track_id:  104
+track_id:  106
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 716 1 1 28 507
+track_id:  107
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 773 1 2 238 528
+track_id:  108
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 762 2 2 598 156
+track_id:  109
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 804 2 1 707 175
+track_id:  110
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 763 2 1 713 178
+track_id:  111
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  112
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  113
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 847 3 2 680 176
+track_id:  114
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 808 1 3 192 588
+track_id:  115
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 816 2 1 679 181
+track_id:  116
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 788 2 1 701 178
+track_id:  117
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 799 2 4 594 173
+track_id:  118
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 813 2 2 611 183
+track_id:  120
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 866 2 1 718 178
+track_id:  121
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 849 2 1 741 177
+track_id:  122
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  123
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  124
+index_head = 0 index_tail = 1 center invalid, moi = -1
+track_id:  127
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  128
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 869 1 1 66 498
+track_id:  131
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 914 2 1 722 179
+track_id:  132
+track_id:  133
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 929 2 2 596 161
+track_id:  136
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  137
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 943 1 1 95 512
+track_id:  138
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 1047 4 3 451 582
+track_id:  139
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1090 1 2 247 552
+track_id:  141
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1063 2 1 725 178
+track_id:  142
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1090 2 1 749 184
+track_id:  143
+index_head = 0 index_tail = 1 center valid, moi = 5
+cam_14 1162 6 1 1082 239
+track_id:  149
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1088 2 1 716 179
+track_id:  150
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1118 2 1 720 177
+track_id:  151
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1110 2 4 588 170
+track_id:  154
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1113 2 1 711 181
+track_id:  155
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1132 2 1 718 178
+track_id:  156
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1122 1 1 68 503
+track_id:  157
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1151 2 1 720 177
+track_id:  158
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1155 1 1 72 504
+track_id:  159
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 1159 4 1 430 498
+track_id:  160
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 1270 4 1 481 500
+track_id:  162
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1202 2 1 720 180
+track_id:  163
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 1265 4 2 609 583
+track_id:  164
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1212 2 2 596 169
+track_id:  168
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1237 1 1 30 511
+track_id:  170
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1245 2 2 607 187
+track_id:  172
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1334 2 1 724 176
+track_id:  174
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 1309 3 1 762 193
+track_id:  176
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 1421 4 2 522 542
+track_id:  178
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1395 2 1 742 180
+track_id:  180
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1359 2 1 717 180
+track_id:  182
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1342 1 1 10 493
+track_id:  183
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  184
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1351 2 4 594 172
+track_id:  185
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1377 2 2 603 172
+track_id:  186
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1412 2 1 731 178
+track_id:  188
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1397 2 2 597 175
+track_id:  189
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1383 1 1 64 506
+track_id:  190
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  192
+index_head = 2 index_tail = 2 MOI invalid, moi = -1
+track_id:  193
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 1452 3 3 619 169
+track_id:  197
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1480 2 1 718 178
+track_id:  200
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1483 1 2 96 585
+track_id:  202
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1455 1 1 58 508
+track_id:  203
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1470 1 2 277 523
+track_id:  204
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  207
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1519 1 1 80 508
+track_id:  208
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1479 1 2 351 524
+track_id:  209
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1543 1 2 198 527
+track_id:  210
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 1523 3 1 731 176
+track_id:  211
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1514 1 1 154 505
+track_id:  212
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  215
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1565 2 1 713 178
+track_id:  216
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1571 2 2 628 183
+track_id:  219
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1599 2 2 645 181
+track_id:  221
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1622 2 1 720 181
+track_id:  222
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  224
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1637 2 1 710 178
+track_id:  225
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1640 2 1 727 177
+track_id:  230
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 1776 4 3 201 583
+track_id:  231
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1784 2 1 729 179
+track_id:  232
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1707 1 4 62 584
+track_id:  235
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1732 1 4 53 587
+track_id:  236
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1700 1 2 325 506
+track_id:  237
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  238
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1848 2 2 599 181
+track_id:  239
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1771 2 1 714 178
+track_id:  240
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1799 1 2 292 533
+track_id:  242
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1766 1 2 38 586
+track_id:  243
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 1745 5 4 1207 225
+track_id:  244
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1829 1 1 338 502
+track_id:  246
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  247
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1797 2 1 749 185
+track_id:  248
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1787 1 3 71 589
+track_id:  249
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1921 1 4 166 584
+track_id:  250
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1812 1 4 59 585
+track_id:  252
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1823 2 1 717 178
+track_id:  253
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  254
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1845 2 1 718 179
+track_id:  256
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  258
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1818 2 1 779 207
+track_id:  259
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1826 1 2 111 534
+track_id:  262
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1857 2 1 738 176
+track_id:  265
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1851 2 4 646 175
+track_id:  266
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1877 1 4 83 587
+track_id:  267
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1886 2 1 728 177
+track_id:  268
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1887 2 1 745 188
+track_id:  270
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1913 2 1 728 178
+track_id:  272
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1903 2 1 714 176
+track_id:  275
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1951 1 4 219 583
+track_id:  277
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2007 1 4 56 584
+track_id:  278
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 1945 1 4 69 589
+track_id:  279
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  281
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 1991 2 1 728 178
+track_id:  283
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  284
+index_head = 2 index_tail = 2 MOI invalid, moi = -1
+track_id:  286
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2052 2 2 601 183
+track_id:  287
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2073 2 1 717 181
+track_id:  288
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  290
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2090 2 1 713 179
+track_id:  291
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  292
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2085 1 1 76 506
+track_id:  293
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2094 1 1 135 493
+track_id:  294
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 2138 4 1 561 490
+track_id:  295
+index_head = 0 index_tail = 1 center valid, moi = 5
+cam_14 2154 6 1 1135 275
+track_id:  296
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 2124 3 1 733 180
+track_id:  297
+track_id:  298
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2127 2 4 593 175
+track_id:  300
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2211 1 1 174 507
+track_id:  302
+track_id:  304
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2188 2 1 738 191
+track_id:  305
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2160 1 1 99 454
+track_id:  306
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2193 2 1 743 186
+track_id:  307
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2200 2 1 703 172
+track_id:  308
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  310
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2240 2 1 718 179
+track_id:  311
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2246 2 4 597 173
+track_id:  312
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2265 2 1 730 179
+track_id:  313
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2273 2 2 643 173
+track_id:  315
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2288 2 1 725 178
+track_id:  316
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 2542 4 3 105 591
+track_id:  317
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2334 1 2 293 529
+track_id:  318
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2309 1 1 22 493
+track_id:  319
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2306 1 1 82 513
+track_id:  321
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2322 2 2 597 169
+track_id:  322
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2321 1 1 66 500
+track_id:  323
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2324 2 4 652 175
+track_id:  324
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 2504 4 3 413 584
+track_id:  325
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2337 1 1 61 507
+track_id:  326
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2384 1 4 158 588
+track_id:  327
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  329
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2349 2 2 637 182
+track_id:  331
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  332
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2388 2 1 734 178
+track_id:  333
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2385 2 1 710 180
+track_id:  334
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2373 1 1 86 500
+track_id:  335
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2376 2 2 594 183
+track_id:  336
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2390 1 1 59 498
+track_id:  340
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2398 1 1 122 512
+track_id:  342
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2414 2 1 714 180
+track_id:  343
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2420 1 4 245 514
+track_id:  344
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2391 1 1 140 491
+track_id:  346
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  347
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2416 2 2 596 182
+track_id:  348
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2408 1 1 130 500
+track_id:  349
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2469 1 4 73 597
+track_id:  351
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2517 2 1 734 177
+track_id:  352
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2661 1 4 179 578
+track_id:  354
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 2606 4 4 139 581
+track_id:  355
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  356
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2637 2 2 601 207
+track_id:  357
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  358
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  359
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2667 2 2 649 174
+track_id:  360
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 2644 3 1 778 188
+track_id:  362
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2581 1 1 7 513
+track_id:  363
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2671 2 2 586 182
+track_id:  364
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  368
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 2662 3 1 787 194
+track_id:  369
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2638 1 1 79 507
+track_id:  370
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2709 2 2 596 185
+track_id:  371
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 2629 3 1 743 186
+track_id:  372
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  373
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 2982 4 1 288 488
+track_id:  375
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  376
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  377
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2728 2 1 730 178
+track_id:  378
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2745 2 4 595 172
+track_id:  380
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 2751 3 1 744 181
+track_id:  381
+track_id:  382
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2768 2 1 717 174
+track_id:  383
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2766 2 2 589 184
+track_id:  384
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2786 1 3 311 523
+track_id:  386
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2824 1 3 114 590
+track_id:  389
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 2785 3 1 722 177
+track_id:  390
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2801 2 1 728 178
+track_id:  391
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  392
+track_id:  396
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2785 2 1 659 181
+track_id:  399
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2809 2 1 749 199
+track_id:  400
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2823 2 1 716 180
+track_id:  408
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2846 2 1 721 178
+track_id:  409
+index_head = 0 index_tail = 1 center valid, moi = 5
+cam_14 3135 6 1 1179 304
+track_id:  410
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2861 2 1 721 178
+track_id:  411
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  412
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  413
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  414
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  416
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2932 1 4 93 584
+track_id:  417
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2898 2 4 602 161
+track_id:  418
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 3105 4 2 435 523
+track_id:  420
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  422
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 2915 2 2 640 183
+track_id:  423
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2909 1 1 47 504
+track_id:  424
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  425
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 2936 1 2 328 513
+track_id:  427
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  428
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  429
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  430
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3022 2 2 655 186
+track_id:  431
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3018 2 1 766 186
+track_id:  432
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3014 1 2 327 517
+track_id:  433
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  434
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3029 1 4 68 591
+track_id:  436
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  437
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 2985 3 1 770 190
+track_id:  438
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  439
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3068 1 4 72 584
+track_id:  440
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 3022 3 1 794 198
+track_id:  441
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3047 2 2 599 172
+track_id:  442
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3054 1 4 207 580
+track_id:  443
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  444
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3053 2 2 658 170
+track_id:  445
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3072 2 2 628 170
+track_id:  446
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3068 1 4 269 576
+track_id:  447
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3090 2 2 601 183
+track_id:  450
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3090 2 1 724 178
+track_id:  452
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3132 2 2 636 174
+track_id:  453
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3162 2 1 744 177
+track_id:  455
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3130 1 1 103 502
+track_id:  456
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  458
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3158 1 1 106 510
+track_id:  463
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  464
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  465
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  466
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  468
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  470
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3261 2 2 589 159
+track_id:  471
+track_id:  474
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  475
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3245 1 1 81 504
+track_id:  478
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3270 2 2 645 164
+track_id:  481
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  482
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  483
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  485
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3330 2 4 644 157
+track_id:  489
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3369 1 2 292 500
+track_id:  490
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3335 2 2 587 173
+track_id:  491
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3328 1 1 59 515
+track_id:  492
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3348 2 1 715 181
+track_id:  495
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3359 2 1 709 179
+track_id:  496
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3365 2 2 591 185
+track_id:  497
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3374 1 1 26 517
+track_id:  498
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3374 1 1 109 497
+track_id:  500
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3419 1 2 187 523
+track_id:  502
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3386 2 2 600 184
+track_id:  503
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3396 1 1 91 506
+track_id:  504
+index_head = 0 index_tail = 1 center valid, moi = 5
+cam_14 3450 6 1 1116 266
+track_id:  505
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3406 2 1 713 179
+track_id:  506
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3400 1 1 33 507
+track_id:  507
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  509
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3422 2 2 641 180
+track_id:  510
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3444 2 1 747 177
+track_id:  511
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3400 1 1 188 506
+track_id:  513
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  518
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 3607 3 3 655 163
+track_id:  521
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3500 1 4 254 581
+track_id:  522
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3513 1 4 150 585
+track_id:  523
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3525 2 2 593 187
+track_id:  524
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3634 2 1 736 179
+track_id:  525
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3561 2 2 591 185
+track_id:  526
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3598 2 1 741 206
+track_id:  527
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  528
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3580 2 1 773 197
+track_id:  529
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3589 2 1 739 197
+track_id:  530
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3576 2 2 597 185
+track_id:  531
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3614 2 1 705 178
+track_id:  532
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3618 1 3 119 588
+track_id:  533
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  534
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3638 2 1 708 176
+track_id:  536
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  537
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  538
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3656 2 1 717 178
+track_id:  539
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3665 1 2 233 547
+track_id:  540
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3663 2 1 733 178
+track_id:  541
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 3666 5 1 1247 334
+track_id:  542
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3641 2 4 586 175
+track_id:  543
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3630 1 2 181 539
+track_id:  544
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3662 1 1 80 506
+track_id:  545
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3636 1 1 106 505
+track_id:  546
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  547
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3716 1 1 346 496
+track_id:  549
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3684 1 1 107 507
+track_id:  550
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3798 1 4 169 572
+track_id:  551
+track_id:  552
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  554
+track_id:  555
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 3835 4 2 333 583
+track_id:  556
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3761 2 1 710 181
+track_id:  557
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3771 2 1 717 178
+track_id:  560
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3818 2 1 720 178
+track_id:  562
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  564
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3774 1 2 144 516
+track_id:  565
+track_id:  566
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 3873 4 2 497 541
+track_id:  567
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3861 1 2 242 547
+track_id:  570
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3835 1 4 70 583
+track_id:  571
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3809 1 4 92 582
+track_id:  572
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3872 1 2 121 533
+track_id:  573
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3913 1 4 81 587
+track_id:  577
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 4090 4 3 157 591
+track_id:  579
+track_id:  580
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  581
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  582
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3844 1 1 149 533
+track_id:  583
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3860 1 1 80 503
+track_id:  584
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3852 1 1 104 504
+track_id:  586
+index_head = 0 index_tail = 1 center invalid, moi = -1
+track_id:  587
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3914 2 2 627 159
+track_id:  588
+track_id:  590
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 3939 1 2 298 529
+track_id:  592
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  593
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  594
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3935 2 2 641 184
+track_id:  595
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3967 2 4 589 170
+track_id:  596
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  598
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 3978 2 4 642 171
+track_id:  600
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  601
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  605
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4110 1 1 229 555
+track_id:  606
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  608
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  609
+track_id:  610
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  611
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  612
+track_id:  613
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4094 2 1 716 181
+track_id:  614
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 4244 4 3 204 585
+track_id:  615
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  618
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4103 2 1 719 181
+track_id:  619
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  622
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4097 1 1 14 505
+track_id:  623
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  624
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  625
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4106 1 1 72 512
+track_id:  628
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4123 1 1 115 512
+track_id:  631
+track_id:  632
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  633
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4134 1 1 110 502
+track_id:  634
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4138 1 1 23 511
+track_id:  635
+track_id:  638
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4333 2 1 794 209
+track_id:  639
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 4307 4 3 175 585
+track_id:  641
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4425 2 2 596 183
+track_id:  642
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  643
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  645
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  649
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 4319 4 3 364 585
+track_id:  650
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 4321 3 1 769 195
+track_id:  652
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4349 2 1 713 175
+track_id:  653
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  654
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 4334 4 2 445 521
+track_id:  655
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4346 2 1 657 183
+track_id:  656
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 4306 3 1 744 184
+track_id:  660
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 4323 3 1 726 177
+track_id:  661
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 4305 3 1 721 179
+track_id:  664
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4397 2 2 651 161
+track_id:  666
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  667
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  670
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4348 2 1 740 192
+track_id:  671
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  672
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4410 2 1 726 177
+track_id:  673
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4451 2 1 740 178
+track_id:  675
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 4386 3 1 791 210
+track_id:  677
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4425 1 1 65 513
+track_id:  679
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4429 2 1 702 179
+track_id:  680
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4465 2 1 749 183
+track_id:  682
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4458 2 4 635 175
+track_id:  684
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  685
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  687
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4550 1 2 124 560
+track_id:  688
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 4602 4 3 221 589
+track_id:  691
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  694
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4488 2 1 664 189
+track_id:  696
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  697
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  698
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  700
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  701
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4574 2 1 747 180
+track_id:  702
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4617 1 2 303 524
+track_id:  703
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  704
+track_id:  706
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  707
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  708
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4548 1 1 81 495
+track_id:  711
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4656 1 2 103 552
+track_id:  712
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4631 1 1 83 503
+track_id:  713
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4713 1 4 81 569
+track_id:  714
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4630 2 2 643 180
+track_id:  717
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4646 2 1 720 179
+track_id:  718
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 4657 3 1 787 202
+track_id:  719
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4677 2 4 641 175
+track_id:  720
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4736 1 2 355 539
+track_id:  722
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 4677 3 1 777 196
+track_id:  723
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4685 2 1 706 180
+track_id:  724
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4725 1 2 230 517
+track_id:  727
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4684 2 1 726 212
+track_id:  729
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4704 2 1 724 178
+track_id:  730
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  731
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  734
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4706 2 1 660 181
+track_id:  735
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4717 2 4 591 176
+track_id:  736
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4769 1 2 258 522
+track_id:  737
+track_id:  738
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  741
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4729 2 1 761 211
+track_id:  742
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4738 2 1 711 178
+track_id:  743
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  744
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4752 2 1 714 177
+track_id:  745
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  746
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  747
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4766 2 4 596 172
+track_id:  748
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  750
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  752
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4788 2 1 741 177
+track_id:  754
+index_head = 0 index_tail = 1 center valid, moi = 5
+cam_14 4754 6 1 1045 218
+track_id:  756
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  757
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4809 1 2 166 523
+track_id:  758
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4778 2 4 634 172
+track_id:  761
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4784 2 1 716 180
+track_id:  763
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4775 2 1 721 178
+track_id:  764
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4818 1 1 89 507
+track_id:  765
+track_id:  766
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  767
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4838 1 1 51 505
+track_id:  768
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  769
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  770
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4872 2 2 645 156
+track_id:  771
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4890 2 2 591 177
+track_id:  772
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4890 1 1 92 501
+track_id:  775
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  776
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  778
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4947 2 1 729 177
+track_id:  782
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4955 1 1 57 513
+track_id:  785
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4956 1 4 253 577
+track_id:  788
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4971 2 2 588 167
+track_id:  790
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 4959 2 1 728 179
+track_id:  791
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4976 1 2 202 548
+track_id:  792
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 4988 1 1 77 502
+track_id:  793
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5005 1 4 112 588
+track_id:  795
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5001 1 4 272 581
+track_id:  796
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  797
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5063 1 2 86 588
+track_id:  799
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5061 1 2 327 531
+track_id:  801
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5010 2 1 728 180
+track_id:  802
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5066 2 1 736 180
+track_id:  803
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5049 2 1 726 180
+track_id:  804
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  805
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  806
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  807
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5068 2 1 714 179
+track_id:  808
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 5243 4 3 154 583
+track_id:  811
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  812
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5178 1 2 129 533
+track_id:  813
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5115 2 1 714 181
+track_id:  816
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5119 2 1 732 178
+track_id:  817
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  818
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5142 2 4 593 160
+track_id:  819
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  823
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5142 2 1 717 179
+track_id:  827
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 5391 4 3 476 573
+track_id:  828
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 5247 5 1 1016 225
+track_id:  829
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 5229 5 1 1042 219
+track_id:  831
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  833
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  835
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  836
+track_id:  837
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5283 2 2 606 185
+track_id:  838
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  840
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6165 1 4 240 581
+track_id:  842
+track_id:  843
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5292 1 1 98 495
+track_id:  844
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5292 1 1 189 502
+track_id:  845
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 5266 3 1 723 177
+track_id:  848
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  849
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5327 2 2 596 158
+track_id:  850
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 5294 3 1 728 178
+track_id:  852
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  854
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5342 2 2 592 182
+track_id:  855
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5354 2 2 602 184
+track_id:  858
+track_id:  859
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5379 2 1 716 178
+track_id:  860
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5370 2 1 789 210
+track_id:  861
+index_head = 2 index_tail = 2 MOI invalid, moi = -1
+track_id:  862
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5392 2 1 713 181
+track_id:  865
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 5354 3 1 748 178
+track_id:  866
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 5365 3 1 739 186
+track_id:  867
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5397 2 1 741 191
+track_id:  869
+track_id:  871
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5414 1 1 73 501
+track_id:  872
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 5400 3 1 753 208
+track_id:  873
+track_id:  875
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5466 1 2 182 500
+track_id:  876
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5522 2 1 727 178
+track_id:  877
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  878
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5524 2 1 750 187
+track_id:  880
+track_id:  881
+track_id:  882
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5498 2 4 590 168
+track_id:  883
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  886
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  887
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5557 1 1 32 507
+track_id:  888
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5502 2 2 650 174
+track_id:  890
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 5487 5 4 1252 322
+track_id:  891
+track_id:  893
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5508 2 1 695 180
+track_id:  895
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  899
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  901
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5546 2 2 601 164
+track_id:  903
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5533 2 1 744 194
+track_id:  904
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5544 1 1 60 510
+track_id:  905
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  906
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5579 1 2 333 507
+track_id:  907
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  908
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5550 2 1 726 178
+track_id:  909
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5574 2 1 730 177
+track_id:  910
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5553 1 1 119 506
+track_id:  912
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5566 2 1 713 178
+track_id:  913
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5574 1 1 112 507
+track_id:  914
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5600 2 1 724 178
+track_id:  915
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5596 1 1 83 515
+track_id:  916
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5603 2 4 591 173
+track_id:  917
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  920
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  921
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5666 1 4 133 588
+track_id:  922
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5646 2 4 618 220
+track_id:  923
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5660 2 1 720 179
+track_id:  924
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5700 1 1 5 510
+track_id:  926
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5691 2 4 585 159
+track_id:  927
+track_id:  928
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5706 1 2 319 533
+track_id:  929
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5690 2 2 645 182
+track_id:  930
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  932
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5709 1 1 61 505
+track_id:  933
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5714 2 1 716 179
+track_id:  935
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5714 2 2 597 186
+track_id:  936
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5693 2 1 720 178
+track_id:  938
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5744 2 1 727 178
+track_id:  939
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5723 1 1 112 508
+track_id:  940
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5739 2 2 599 185
+track_id:  941
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5756 1 4 252 585
+track_id:  942
+track_id:  943
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5787 1 1 61 509
+track_id:  944
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5780 2 2 636 180
+track_id:  945
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5784 2 1 725 179
+track_id:  946
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5851 1 4 173 589
+track_id:  947
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5775 1 2 179 524
+track_id:  949
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5812 1 4 180 584
+track_id:  950
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5805 2 1 724 179
+track_id:  951
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 6021 4 1 599 500
+track_id:  955
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5820 1 1 146 500
+track_id:  957
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5858 2 1 719 179
+track_id:  958
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5891 1 2 114 592
+track_id:  962
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5903 1 2 229 531
+track_id:  963
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5883 1 1 62 470
+track_id:  970
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5951 2 2 594 175
+track_id:  972
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5991 1 2 311 554
+track_id:  973
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 5998 1 3 76 587
+track_id:  974
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 5964 2 1 718 180
+track_id:  975
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 6123 4 3 107 590
+track_id:  976
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  977
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  978
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6036 1 2 167 530
+track_id:  980
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  982
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  983
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6030 1 3 284 570
+track_id:  985
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6057 1 2 79 587
+track_id:  986
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  988
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  989
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6066 1 2 156 542
+track_id:  992
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  993
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6087 1 2 115 530
+track_id:  995
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 6072 3 1 754 187
+track_id:  996
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  998
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 6099 3 1 733 179
+track_id:  999
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6193 1 4 201 562
+track_id:  1000
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 6203 4 3 233 582
+track_id:  1001
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6159 1 1 43 502
+track_id:  1002
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6197 2 1 717 179
+track_id:  1004
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6188 1 1 18 509
+track_id:  1005
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 6199 3 1 741 176
+track_id:  1006
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6210 2 1 730 178
+track_id:  1007
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6216 1 1 202 482
+track_id:  1008
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6234 2 2 639 183
+track_id:  1010
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6213 1 1 70 502
+track_id:  1011
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6252 2 1 723 179
+track_id:  1014
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 6297 4 1 381 494
+track_id:  1015
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6248 2 1 712 180
+track_id:  1019
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6269 2 1 713 180
+track_id:  1021
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 6312 4 2 565 534
+track_id:  1022
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6399 1 4 151 563
+track_id:  1023
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6296 1 1 59 506
+track_id:  1024
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1025
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6302 1 1 97 516
+track_id:  1026
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 6343 4 2 332 585
+track_id:  1027
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6342 1 1 12 498
+track_id:  1028
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6314 1 1 63 504
+track_id:  1029
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6375 2 1 734 180
+track_id:  1030
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6368 2 1 717 178
+track_id:  1032
+index_head = 0 index_tail = 1 center valid, moi = 5
+cam_14 6357 6 1 1028 206
+track_id:  1034
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6378 2 1 681 191
+track_id:  1036
+index_head = 0 index_tail = 1 center invalid, moi = -1
+track_id:  1037
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6400 2 4 632 167
+track_id:  1039
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6435 2 2 594 184
+track_id:  1040
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6433 1 1 12 507
+track_id:  1041
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6455 2 4 647 168
+track_id:  1042
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1044
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1046
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1047
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6436 1 1 111 503
+track_id:  1048
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6472 2 1 745 190
+track_id:  1050
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6484 2 1 789 206
+track_id:  1054
+track_id:  1055
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6487 2 1 715 177
+track_id:  1056
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6513 2 1 734 183
+track_id:  1057
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6529 2 1 761 194
+track_id:  1058
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  1060
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6523 1 1 73 512
+track_id:  1061
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6552 2 1 716 173
+track_id:  1063
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1064
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6535 2 2 600 185
+track_id:  1065
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6543 2 1 747 185
+track_id:  1066
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6552 2 2 636 179
+track_id:  1067
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  1068
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6652 1 2 127 534
+track_id:  1070
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 6626 4 4 337 584
+track_id:  1074
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 6575 5 2 1253 338
+track_id:  1077
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6601 2 4 600 174
+track_id:  1079
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6643 2 1 750 193
+track_id:  1080
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6671 2 2 613 171
+track_id:  1081
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 6712 3 1 753 182
+track_id:  1082
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6687 2 1 740 178
+track_id:  1083
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6638 1 1 309 505
+track_id:  1084
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6681 2 1 716 180
+track_id:  1086
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6689 2 2 646 180
+track_id:  1087
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6700 2 2 608 181
+track_id:  1090
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6694 1 1 70 512
+track_id:  1091
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 6774 3 2 675 178
+track_id:  1092
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1093
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1095
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6787 1 2 268 522
+track_id:  1096
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6784 2 1 748 180
+track_id:  1097
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1098
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6744 1 1 32 507
+track_id:  1100
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1102
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6779 2 1 724 179
+track_id:  1103
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6831 1 2 190 580
+track_id:  1104
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 7206 4 2 424 555
+track_id:  1106
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6795 2 4 594 170
+track_id:  1107
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  1108
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6830 2 4 599 163
+track_id:  1109
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6839 2 1 731 179
+track_id:  1110
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6849 2 4 608 175
+track_id:  1112
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  1113
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6864 1 1 110 492
+track_id:  1114
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1115
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6917 1 2 115 585
+track_id:  1116
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6884 2 4 647 170
+track_id:  1117
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6906 2 2 588 167
+track_id:  1118
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6888 1 1 104 491
+track_id:  1120
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1121
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6961 1 4 221 585
+track_id:  1122
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6936 2 1 715 178
+track_id:  1123
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  1124
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 6984 2 2 591 156
+track_id:  1125
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 6983 1 2 236 495
+track_id:  1128
+track_id:  1129
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7016 1 2 251 524
+track_id:  1133
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7008 2 1 722 181
+track_id:  1134
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7020 1 1 59 504
+track_id:  1137
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7032 1 2 246 549
+track_id:  1138
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  1139
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1140
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7119 1 4 141 578
+track_id:  1141
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7053 2 4 591 171
+track_id:  1147
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1148
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7106 2 2 637 182
+track_id:  1149
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7127 2 1 720 179
+track_id:  1151
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7178 1 2 320 574
+track_id:  1152
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7169 1 4 125 591
+track_id:  1153
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7177 1 1 103 510
+track_id:  1154
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 7140 3 1 796 202
+track_id:  1156
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1159
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1160
+index_head = 2 index_tail = 2 MOI invalid, moi = -1
+track_id:  1162
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1163
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7251 1 3 72 591
+track_id:  1164
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7206 2 1 719 180
+track_id:  1165
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  1166
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7208 2 2 607 185
+track_id:  1167
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7178 1 1 197 488
+track_id:  1168
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7197 1 1 92 511
+track_id:  1169
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1170
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 7292 4 2 318 554
+track_id:  1173
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7277 1 1 83 502
+track_id:  1174
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7356 1 4 70 589
+track_id:  1175
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1177
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7428 1 4 186 586
+track_id:  1178
+track_id:  1180
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7350 2 4 754 192
+track_id:  1181
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 7336 3 1 721 178
+track_id:  1182
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 7360 5 4 1253 311
+track_id:  1183
+track_id:  1184
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7401 2 2 598 184
+track_id:  1185
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 7492 4 1 479 504
+track_id:  1186
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7382 1 1 73 503
+track_id:  1188
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7461 1 2 241 533
+track_id:  1190
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7397 2 1 709 179
+track_id:  1191
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1192
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7433 2 1 717 178
+track_id:  1194
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1195
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 7605 4 3 196 589
+track_id:  1198
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  1199
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7515 2 2 604 185
+track_id:  1200
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7557 2 1 721 179
+track_id:  1201
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  1202
+track_id:  1203
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7554 1 1 101 503
+track_id:  1205
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 7531 3 1 772 194
+track_id:  1206
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 7581 3 2 815 202
+track_id:  1207
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 7543 3 1 795 200
+track_id:  1208
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 7603 3 1 816 202
+track_id:  1209
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7639 2 4 644 160
+track_id:  1211
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7658 1 1 87 502
+track_id:  1212
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  1214
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7698 2 2 640 174
+track_id:  1215
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1218
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7718 2 1 727 178
+track_id:  1219
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7718 1 1 154 497
+track_id:  1220
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 7793 4 2 267 582
+track_id:  1222
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7751 1 1 77 512
+track_id:  1223
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7842 1 2 330 509
+track_id:  1224
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7819 2 1 752 179
+track_id:  1225
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1226
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7818 2 1 718 179
+track_id:  1227
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7763 1 1 32 505
+track_id:  1229
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7833 2 1 730 179
+track_id:  1230
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7863 1 1 69 506
+track_id:  1231
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7802 1 1 271 509
+track_id:  1232
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7845 2 1 731 179
+track_id:  1233
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7887 2 4 587 157
+track_id:  1235
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7877 1 2 198 546
+track_id:  1238
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7896 1 1 46 512
+track_id:  1239
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7889 1 2 294 534
+track_id:  1240
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7905 2 1 730 178
+track_id:  1241
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7944 2 1 734 177
+track_id:  1242
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 7949 1 1 124 494
+track_id:  1243
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7971 2 1 743 192
+track_id:  1245
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 7983 2 1 716 177
+track_id:  1246
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8010 1 1 65 511
+track_id:  1247
+index_head = 0 index_tail = 1 center valid, moi = 5
+cam_14 8206 6 4 1225 247
+track_id:  1248
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8002 2 1 770 211
+track_id:  1249
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8058 1 4 92 560
+track_id:  1251
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8024 2 1 725 181
+track_id:  1252
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 8135 4 3 241 586
+track_id:  1253
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8057 2 1 711 179
+track_id:  1254
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1256
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8066 2 1 724 178
+track_id:  1258
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  1260
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1261
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8131 2 1 776 199
+track_id:  1263
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1265
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8124 2 1 746 184
+track_id:  1266
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8075 1 1 91 495
+track_id:  1267
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  1268
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8203 1 4 148 587
+track_id:  1270
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8107 1 1 136 502
+track_id:  1271
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1272
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8140 1 1 8 500
+track_id:  1273
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 8140 3 1 808 202
+track_id:  1276
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8158 1 1 19 516
+track_id:  1278
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8180 1 1 64 507
+track_id:  1279
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8277 1 4 154 556
+track_id:  1281
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  1282
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1283
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8267 2 1 736 178
+track_id:  1284
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 8621 4 1 304 502
+track_id:  1286
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 8634 4 1 411 497
+track_id:  1287
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8286 2 4 595 159
+track_id:  1288
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 8592 4 2 514 525
+track_id:  1289
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8382 1 4 171 574
+track_id:  1290
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8313 1 4 60 585
+track_id:  1291
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8307 2 2 643 182
+track_id:  1292
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8313 2 1 740 179
+track_id:  1293
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8330 1 2 177 545
+track_id:  1294
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8294 1 4 131 586
+track_id:  1295
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8337 2 1 724 178
+track_id:  1296
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8370 1 4 216 507
+track_id:  1297
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8334 2 1 768 206
+track_id:  1298
+track_id:  1299
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1301
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  1304
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8354 2 1 722 178
+track_id:  1305
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8385 2 4 629 174
+track_id:  1306
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1307
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 8355 3 1 805 200
+track_id:  1308
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8415 2 1 720 178
+track_id:  1309
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8392 2 1 712 178
+track_id:  1312
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1313
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8406 1 4 53 566
+track_id:  1314
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8421 1 4 177 576
+track_id:  1317
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8440 2 1 733 179
+track_id:  1318
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8427 2 4 595 181
+track_id:  1320
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8454 1 4 184 569
+track_id:  1321
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8464 2 2 589 159
+track_id:  1322
+track_id:  1325
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1326
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1327
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  1328
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8499 2 4 595 165
+track_id:  1329
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  1330
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8514 1 2 192 556
+track_id:  1333
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  1334
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 8623 4 3 554 580
+track_id:  1335
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8556 1 2 156 554
+track_id:  1336
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8514 2 4 642 166
+track_id:  1337
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 8509 3 1 721 178
+track_id:  1339
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8576 1 4 230 581
+track_id:  1340
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1341
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1342
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 8630 4 1 314 503
+track_id:  1343
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  1345
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1346
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8662 2 2 655 182
+track_id:  1347
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  1348
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 8614 3 1 739 178
+track_id:  1349
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 8637 3 1 744 179
+track_id:  1350
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  1351
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8676 2 1 728 178
+track_id:  1352
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8681 2 1 734 179
+track_id:  1353
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1356
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 8707 3 1 717 178
+track_id:  1357
+track_id:  1358
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8672 1 1 18 517
+track_id:  1359
+track_id:  1360
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 8684 5 1 1264 349
+track_id:  1362
+index_head = 0 index_tail = 1 center invalid, moi = -1
+track_id:  1363
+track_id:  1364
+index_head = 3 index_tail = 1 MOI invalid, moi = -1
+track_id:  1365
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8759 2 1 733 179
+track_id:  1366
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  1367
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 8873 4 2 427 583
+track_id:  1369
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8798 2 1 724 178
+track_id:  1370
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8826 2 2 597 172
+track_id:  1371
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8841 1 1 33 512
+track_id:  1372
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1374
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 8876 4 1 527 479
+track_id:  1375
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8847 1 1 129 499
+track_id:  1376
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1377
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8873 1 2 187 526
+track_id:  1379
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 8877 5 2 1241 331
+track_id:  1380
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8883 1 1 120 498
+track_id:  1382
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8882 1 1 20 511
+track_id:  1383
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8919 2 2 649 183
+track_id:  1385
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8919 2 1 728 179
+track_id:  1388
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8948 2 2 595 186
+track_id:  1389
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 8960 4 3 491 555
+track_id:  1390
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8944 1 1 46 511
+track_id:  1391
+track_id:  1392
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 8937 5 1 1238 282
+track_id:  1393
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8963 1 2 92 586
+track_id:  1394
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8934 1 1 106 510
+track_id:  1395
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 8987 1 2 285 527
+track_id:  1398
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9031 1 4 49 565
+track_id:  1402
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 8985 2 1 725 178
+track_id:  1405
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9032 1 2 298 541
+track_id:  1406
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9029 2 1 740 177
+track_id:  1407
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9007 2 2 632 182
+track_id:  1409
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9079 1 4 49 574
+track_id:  1410
+track_id:  1411
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9029 2 2 637 181
+track_id:  1412
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9045 2 1 719 179
+track_id:  1413
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  1415
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9045 2 1 759 204
+track_id:  1416
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  1418
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9086 1 2 316 498
+track_id:  1419
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9075 2 4 620 166
+track_id:  1420
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9091 2 1 726 178
+track_id:  1422
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9078 2 1 716 175
+track_id:  1424
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9135 2 1 742 178
+track_id:  1427
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9134 2 1 716 178
+track_id:  1429
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9183 1 1 29 509
+track_id:  1430
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9147 1 1 71 502
+track_id:  1431
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9176 2 2 587 158
+track_id:  1433
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9164 1 1 77 496
+track_id:  1434
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9185 1 1 103 512
+track_id:  1435
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9179 2 2 648 182
+track_id:  1436
+track_id:  1437
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9206 1 4 200 577
+track_id:  1442
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9189 2 1 722 178
+track_id:  1443
+track_id:  1444
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9200 2 2 645 182
+track_id:  1445
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9215 2 4 588 175
+track_id:  1446
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9226 2 1 753 191
+track_id:  1447
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9224 2 2 649 183
+track_id:  1448
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9242 2 1 729 178
+track_id:  1449
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9234 2 2 596 186
+track_id:  1450
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9264 2 2 599 184
+track_id:  1453
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9261 2 3 652 175
+track_id:  1454
+track_id:  1455
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9310 1 2 307 523
+track_id:  1456
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9346 1 4 185 587
+track_id:  1457
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9303 1 1 92 510
+track_id:  1458
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9306 2 1 718 177
+track_id:  1459
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1460
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9289 1 1 114 500
+track_id:  1461
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9324 1 4 88 586
+track_id:  1465
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9317 2 1 721 180
+track_id:  1466
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9308 1 1 36 504
+track_id:  1470
+track_id:  1472
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1474
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9362 2 4 601 171
+track_id:  1475
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1476
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9364 2 2 660 180
+track_id:  1477
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9363 1 2 154 550
+track_id:  1478
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9387 1 1 76 508
+track_id:  1479
+track_id:  1482
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9390 2 2 631 183
+track_id:  1483
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  1486
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9443 2 4 638 162
+track_id:  1488
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1489
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9462 2 2 631 182
+track_id:  1490
+index_head = 3 index_tail = 1 MOI invalid, moi = -1
+track_id:  1491
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9488 1 1 72 506
+track_id:  1492
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9507 2 4 643 167
+track_id:  1494
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9558 1 2 260 548
+track_id:  1497
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1500
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9512 2 1 717 181
+track_id:  1503
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9561 2 1 717 180
+track_id:  1505
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 9806 4 1 515 501
+track_id:  1506
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9584 1 1 85 503
+track_id:  1508
+track_id:  1510
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9614 2 4 592 173
+track_id:  1512
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9643 2 3 604 164
+track_id:  1513
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9629 1 1 101 505
+track_id:  1514
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9689 1 1 510 494
+track_id:  1517
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9657 2 1 718 178
+track_id:  1518
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9646 1 1 117 492
+track_id:  1520
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9669 2 2 607 182
+track_id:  1522
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9692 1 1 90 499
+track_id:  1523
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1525
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9694 2 2 634 182
+track_id:  1526
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9702 1 1 134 491
+track_id:  1532
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9713 2 1 670 180
+track_id:  1533
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9717 1 1 95 499
+track_id:  1535
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9726 2 1 722 179
+track_id:  1539
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  1541
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9797 2 4 590 160
+track_id:  1543
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9729 2 1 675 180
+track_id:  1547
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9846 1 1 200 508
+track_id:  1549
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9738 2 4 672 181
+track_id:  1551
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 9853 3 3 659 166
+track_id:  1552
+index_head = 0 index_tail = 1 center valid, moi = 5
+cam_14 9846 6 1 1094 242
+track_id:  1553
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9807 2 2 644 184
+track_id:  1554
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9812 2 1 699 180
+track_id:  1555
+track_id:  1556
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9828 1 1 58 509
+track_id:  1557
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 9863 4 4 477 574
+track_id:  1558
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9898 1 2 139 547
+track_id:  1559
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9844 1 1 68 511
+track_id:  1563
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9917 1 1 67 507
+track_id:  1564
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1565
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9924 2 2 651 177
+track_id:  1566
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9927 1 1 58 501
+track_id:  1567
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  1569
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9918 2 1 725 179
+track_id:  1570
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9962 2 4 586 171
+track_id:  1572
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 9970 2 4 664 170
+track_id:  1577
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9945 1 1 199 482
+track_id:  1578
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10020 2 4 589 157
+track_id:  1582
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9990 1 1 94 499
+track_id:  1585
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10008 2 1 723 179
+track_id:  1586
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 9988 1 1 179 501
+track_id:  1587
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10040 1 2 172 553
+track_id:  1589
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1590
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10027 1 1 46 509
+track_id:  1591
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1596
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1597
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1598
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10071 2 1 750 203
+track_id:  1599
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1600
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  1602
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1603
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10082 1 3 309 579
+track_id:  1604
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10148 1 2 282 487
+track_id:  1606
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10160 1 2 303 544
+track_id:  1607
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 10256 4 3 260 590
+track_id:  1613
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1615
+track_id:  1616
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10199 1 2 212 532
+track_id:  1619
+track_id:  1620
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10385 1 4 167 577
+track_id:  1622
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10239 1 4 103 517
+track_id:  1623
+track_id:  1624
+track_id:  1625
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 10288 4 4 504 581
+track_id:  1626
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10228 2 1 666 179
+track_id:  1627
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 10234 3 1 722 179
+track_id:  1630
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 10329 3 3 666 163
+track_id:  1631
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10305 1 2 90 556
+track_id:  1632
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  1633
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  1634
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  1636
+track_id:  1638
+track_id:  1641
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  1642
+track_id:  1644
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 10311 3 1 794 209
+track_id:  1645
+track_id:  1646
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10381 2 1 746 177
+track_id:  1647
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 10285 3 1 784 198
+track_id:  1648
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 10351 3 1 745 177
+track_id:  1649
+index_head = 2 index_tail = 2 MOI invalid, moi = -1
+track_id:  1650
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 10476 4 2 574 523
+track_id:  1651
+index_head = 2 index_tail = 2 MOI invalid, moi = -1
+track_id:  1652
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10343 1 1 46 505
+track_id:  1654
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 10635 4 1 533 498
+track_id:  1655
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10445 1 4 150 585
+track_id:  1657
+track_id:  1658
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10347 2 1 725 177
+track_id:  1659
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10393 1 2 128 525
+track_id:  1660
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1661
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 10359 3 1 748 188
+track_id:  1662
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10381 2 1 722 178
+track_id:  1663
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10358 2 2 598 182
+track_id:  1665
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1666
+track_id:  1667
+track_id:  1669
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10370 2 1 715 177
+track_id:  1670
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1675
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1678
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1679
+track_id:  1680
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10611 1 4 226 510
+track_id:  1682
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1683
+track_id:  1684
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1685
+track_id:  1686
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10442 2 1 733 179
+track_id:  1687
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1688
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1691
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10452 2 1 739 196
+track_id:  1692
+track_id:  1694
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10467 2 1 717 178
+track_id:  1695
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10476 2 1 741 178
+track_id:  1696
+track_id:  1697
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  1699
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1700
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1701
+track_id:  1702
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10557 1 4 109 588
+track_id:  1703
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10477 2 1 785 210
+track_id:  1704
+track_id:  1705
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10493 2 2 597 182
+track_id:  1706
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10541 1 1 84 511
+track_id:  1707
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  1708
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1709
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1710
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10526 2 4 594 156
+track_id:  1712
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10527 2 2 663 179
+track_id:  1714
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10538 2 1 731 178
+track_id:  1715
+track_id:  1716
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10580 1 4 92 590
+track_id:  1717
+track_id:  1721
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10657 1 2 161 529
+track_id:  1722
+track_id:  1723
+track_id:  1724
+track_id:  1727
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10719 1 4 100 586
+track_id:  1728
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10629 2 4 601 170
+track_id:  1729
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1730
+track_id:  1731
+track_id:  1732
+track_id:  1733
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10675 1 4 246 584
+track_id:  1734
+track_id:  1735
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1736
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1738
+track_id:  1739
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 10632 5 1 1219 334
+track_id:  1740
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10682 1 4 153 590
+track_id:  1743
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 10657 3 1 748 188
+track_id:  1744
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10626 2 1 718 178
+track_id:  1745
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1746
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1747
+track_id:  1748
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1751
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1753
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10799 1 4 169 582
+track_id:  1755
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 10653 3 1 759 195
+track_id:  1756
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1757
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10684 2 1 719 179
+track_id:  1759
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10695 2 2 608 183
+track_id:  1761
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1762
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10755 1 2 322 537
+track_id:  1763
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10724 1 2 338 524
+track_id:  1764
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10709 2 1 725 180
+track_id:  1766
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1767
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10734 2 2 593 170
+track_id:  1768
+track_id:  1769
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10728 2 1 724 180
+track_id:  1770
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10749 1 4 88 588
+track_id:  1771
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10758 2 1 751 191
+track_id:  1772
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10754 2 1 723 179
+track_id:  1773
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10791 1 4 61 485
+track_id:  1774
+track_id:  1775
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10766 2 1 714 181
+track_id:  1776
+track_id:  1777
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1778
+track_id:  1779
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1780
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10791 2 1 718 176
+track_id:  1782
+track_id:  1783
+track_id:  1784
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10785 2 4 593 171
+track_id:  1786
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10868 1 2 193 543
+track_id:  1788
+track_id:  1789
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10783 2 1 753 209
+track_id:  1791
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1794
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10803 2 2 593 185
+track_id:  1796
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1797
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1798
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10836 1 2 224 528
+track_id:  1801
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  1803
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1805
+track_id:  1806
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1808
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 10901 4 1 317 490
+track_id:  1809
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10812 2 1 732 179
+track_id:  1810
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1811
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  1812
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10870 1 1 3 510
+track_id:  1813
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  1814
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  1815
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1817
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1818
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10932 1 1 36 500
+track_id:  1819
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 10895 1 1 493 502
+track_id:  1820
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 10962 2 1 745 179
+track_id:  1821
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 11016 4 3 154 586
+track_id:  1822
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1824
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11012 1 1 20 504
+track_id:  1825
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  1827
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11088 2 4 594 158
+track_id:  1828
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11087 2 1 733 178
+track_id:  1830
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11077 1 1 58 512
+track_id:  1831
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 11121 3 2 678 177
+track_id:  1832
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11133 1 4 169 585
+track_id:  1833
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11139 2 4 600 176
+track_id:  1834
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11169 2 1 720 180
+track_id:  1835
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11171 2 2 597 184
+track_id:  1836
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11202 2 4 601 175
+track_id:  1838
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1839
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11214 2 1 751 196
+track_id:  1840
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11233 2 1 714 177
+track_id:  1842
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11239 2 1 752 198
+track_id:  1843
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11257 2 1 698 178
+track_id:  1844
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11258 2 1 724 177
+track_id:  1848
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11281 1 1 134 512
+track_id:  1850
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11277 1 1 50 506
+track_id:  1851
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1852
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11354 1 4 319 535
+track_id:  1853
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11294 2 1 721 178
+track_id:  1856
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11348 1 2 130 557
+track_id:  1857
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11338 2 2 595 183
+track_id:  1858
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  1862
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 11443 4 1 588 498
+track_id:  1864
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11433 2 1 739 184
+track_id:  1865
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1867
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11427 2 1 724 180
+track_id:  1869
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11390 1 1 78 502
+track_id:  1870
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11400 1 2 359 506
+track_id:  1873
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1874
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11417 2 1 718 179
+track_id:  1879
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11432 1 1 64 511
+track_id:  1880
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11465 1 2 283 550
+track_id:  1884
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11452 1 2 181 545
+track_id:  1885
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11464 2 1 723 178
+track_id:  1886
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  1887
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11508 1 1 29 510
+track_id:  1888
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11512 1 1 173 560
+track_id:  1891
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11483 2 2 612 188
+track_id:  1892
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11500 2 2 649 181
+track_id:  1894
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11501 1 1 82 505
+track_id:  1895
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11501 2 2 586 173
+track_id:  1896
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  1898
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 11808 4 1 583 496
+track_id:  1901
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11607 1 3 96 574
+track_id:  1902
+index_head = 2 index_tail = 0 center invalid, moi = -1
+track_id:  1903
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11577 2 1 717 177
+track_id:  1906
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11577 1 1 35 507
+track_id:  1908
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11586 1 1 51 515
+track_id:  1911
+track_id:  1912
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11600 2 2 605 187
+track_id:  1913
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11609 2 2 610 185
+track_id:  1918
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11621 2 1 671 178
+track_id:  1922
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  1923
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11642 2 2 625 183
+track_id:  1927
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11661 2 2 605 186
+track_id:  1931
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11673 2 1 714 179
+track_id:  1932
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11697 2 4 599 176
+track_id:  1933
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11738 2 4 644 161
+track_id:  1935
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11761 2 1 750 191
+track_id:  1937
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  1940
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11758 2 2 658 200
+track_id:  1941
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11778 1 1 86 498
+track_id:  1942
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11800 2 4 597 157
+track_id:  1946
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11889 1 4 109 540
+track_id:  1947
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11916 1 4 167 573
+track_id:  1948
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  1949
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11840 1 1 37 514
+track_id:  1950
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11870 2 1 721 178
+track_id:  1951
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  1956
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11964 2 4 587 171
+track_id:  1957
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 11988 1 1 56 513
+track_id:  1959
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 11985 2 2 639 182
+track_id:  1960
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 12059 4 2 410 585
+track_id:  1962
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12014 2 4 597 161
+track_id:  1964
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12067 1 2 90 552
+track_id:  1966
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12025 1 1 22 500
+track_id:  1968
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12069 1 1 12 504
+track_id:  1971
+index_head = 0 index_tail = 1 center valid, moi = 5
+cam_14 12174 6 1 1117 258
+track_id:  1975
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 12175 5 2 1250 285
+track_id:  1976
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  1978
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12142 1 1 25 508
+track_id:  1979
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12194 1 2 178 533
+track_id:  1980
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12225 2 1 754 211
+track_id:  1981
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  1982
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12201 1 1 27 511
+track_id:  1983
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12231 1 2 106 588
+track_id:  1984
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12229 2 1 753 182
+track_id:  1985
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12264 2 1 743 177
+track_id:  1987
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 12189 5 1 1110 255
+track_id:  1990
+track_id:  1991
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12251 2 1 713 179
+track_id:  1993
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  1994
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 12289 5 2 1231 281
+track_id:  1997
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  1998
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12311 2 4 593 166
+track_id:  2003
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  2004
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12332 2 1 723 178
+track_id:  2005
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  2007
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12339 2 1 736 179
+track_id:  2010
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12365 2 4 638 167
+track_id:  2011
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 12329 5 2 1233 315
+track_id:  2012
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  2013
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  2016
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12342 1 1 127 497
+track_id:  2017
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12392 2 1 724 180
+track_id:  2018
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12390 2 4 626 172
+track_id:  2019
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12387 1 1 100 506
+track_id:  2020
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 12424 3 1 733 177
+track_id:  2029
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12440 2 2 602 184
+track_id:  2030
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12488 1 4 128 582
+track_id:  2031
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12567 1 4 162 582
+track_id:  2032
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12471 2 1 725 178
+track_id:  2035
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12479 1 1 43 501
+track_id:  2036
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12462 2 3 591 176
+track_id:  2038
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12486 2 2 637 183
+track_id:  2044
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12519 2 2 599 188
+track_id:  2051
+track_id:  2053
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12556 2 4 771 205
+track_id:  2054
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  2055
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12603 1 2 135 552
+track_id:  2056
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12591 2 1 725 178
+track_id:  2059
+index_head = 0 index_tail = 1 center valid, moi = 5
+cam_14 12609 6 1 1183 321
+track_id:  2063
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12604 2 1 734 178
+track_id:  2064
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  2067
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12628 1 1 62 487
+track_id:  2068
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12621 2 1 723 179
+track_id:  2069
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12660 1 2 301 531
+track_id:  2074
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12728 1 4 198 590
+track_id:  2076
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12701 2 4 596 168
+track_id:  2078
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12727 1 1 6 507
+track_id:  2081
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12753 2 1 740 177
+track_id:  2083
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12746 1 2 237 530
+track_id:  2084
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12767 1 1 69 509
+track_id:  2086
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12776 2 1 717 178
+track_id:  2089
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12779 1 1 76 499
+track_id:  2092
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12797 2 4 597 174
+track_id:  2096
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  2100
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12846 1 1 130 578
+track_id:  2102
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12822 2 1 728 179
+track_id:  2107
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12840 1 1 50 513
+track_id:  2108
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  2109
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 12864 1 2 187 530
+track_id:  2113
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 12896 2 1 723 178
+track_id:  2114
+track_id:  2122
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 12967 4 1 591 501
+track_id:  2123
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  2125
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  2126
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 13005 1 1 34 513
+track_id:  2127
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 13008 4 1 591 488
+track_id:  2133
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 13024 4 1 462 502
+track_id:  2134
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 13117 4 3 241 484
+track_id:  2136
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 13128 4 3 252 574
+track_id:  2141
+index_head = 1 index_tail = 1 MOI invalid, moi = -1
+track_id:  2142
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  2143
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 13170 3 3 632 167
+track_id:  2146
+track_id:  2147
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  2148
+track_id:  2149
+index_head = 1 index_tail = 2 center valid, moi = 3
+cam_14 13154 4 2 491 515
+track_id:  2150
+track_id:  2152
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 13206 1 1 23 508
+track_id:  2155
+index_head = 1 index_tail = 0 center invalid, moi = -1
+track_id:  2157
+track_id:  2158
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  2160
+index_head = 0 index_tail = 1 center invalid, moi = -1
+track_id:  2162
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  2165
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 13223 1 1 80 502
+track_id:  2167
+index_head = 3 index_tail = 1 MOI invalid, moi = -1
+track_id:  2168
+track_id:  2175
+track_id:  2176
+index_head = 3 index_tail = 0 MOI invalid, moi = -1
+track_id:  2177
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 13287 1 1 167 447
+track_id:  2183
+index_head = 0 index_tail = 2 center invalid, moi = -1
+track_id:  2184
+index_head = 2 index_tail = 1 center invalid, moi = -1
+track_id:  2186
+track_id:  2189
+index_head = 1 index_tail = 0 center valid, moi = 2
+cam_14 13353 3 4 698 184
+track_id:  2194
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 13386 1 1 12 511
+track_id:  2197
+index_head = 2 index_tail = 0 center valid, moi = 1
+cam_14 13400 2 1 717 179
+track_id:  2198
+track_id:  2199
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  2200
+track_id:  2201
+track_id:  2203
+index_head = 2 index_tail = 1 center valid, moi = 4
+cam_14 13415 5 1 1239 344
+track_id:  2205
+index_head = 0 index_tail = 2 center valid, moi = 0
+cam_14 13426 1 1 72 510
+track_id:  2207
+track_id:  2210
+track_id:  2212
+index_head = 3 index_tail = 2 MOI invalid, moi = -1
+track_id:  2215
+track_id:  2217
+index_head = 0 index_tail = 0 MOI invalid, moi = -1
+track_id:  2218
+track_id:  2220
