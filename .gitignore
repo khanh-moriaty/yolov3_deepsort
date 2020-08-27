@@ -2,6 +2,7 @@
 *.weights
 *.tar
 *.tfrecord
+move_detection_result.py
 /checkpoints/*
 /serving/*
 /logs/

@@ -75,15 +75,28 @@ class ImageEncoder(object):
 
     def __init__(self, checkpoint_filename, input_name="images",
                  output_name="features"):
+        print('checkpoint_filename',checkpoint_filename)
         self.session = tf.Session()
         with tf.gfile.GFile(checkpoint_filename, "rb") as file_handle:
             graph_def = tf.GraphDef()
             graph_def.ParseFromString(file_handle.read())
+            
+        self.session.graph.as_default()
         tf.import_graph_def(graph_def, name="net")
-        self.input_var = tf.get_default_graph().get_tensor_by_name(
-            "net/%s:0" % input_name)
-        self.output_var = tf.get_default_graph().get_tensor_by_name(
-            "net/%s:0" % output_name)
+        
+        # graph_nodes=[n for n in graph_def.node]
+        # for x in graph_nodes:
+        #     print(x.name)
+        
+        # self.input_var = tf.get_default_graph().get_tensor_by_name(
+        #     "net/%s:0" % input_name)
+        # self.output_var = tf.get_default_graph().get_tensor_by_name(
+        #     "net/%s:0" % output_name)
+        
+        self.input_var = self.session.graph.get_tensor_by_name(
+            "%s:0" % input_name)
+        self.output_var = self.session.graph.get_tensor_by_name(
+            "%s:0" % output_name)
 
         assert len(self.output_var.get_shape()) == 2
         assert len(self.input_var.get_shape()) == 4

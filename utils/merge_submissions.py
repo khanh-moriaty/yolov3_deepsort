@@ -16,6 +16,7 @@ def merge(SUBMISSION_DIR):
         lines = fi.read().splitlines()
         for line in lines:
             content = line.split()[:-2]
+            # content = line.split()
             content = ' '.join(content)
             fo.write(content + '\n')
         fi.close()
@@ -23,4 +24,4 @@ def merge(SUBMISSION_DIR):
     fo.close()
             
 if __name__ == '__main__':
-    merge('data/video/')
+    merge('/storage/submissions/sub9/')

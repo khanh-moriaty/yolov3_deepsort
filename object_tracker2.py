@@ -1,6 +1,7 @@
 import time
 import numpy as np
 import cv2
+import shutil
 import os
 import datetime
 import matplotlib.pyplot as plt
@@ -19,7 +20,7 @@ from utils.load_config import load_config
 from utils.counting import count
 
 from _collections import deque
-from shapely.geometry import Point, Polygon
+from shapely.geometry import Point, MultiPoint, Polygon
 
 
 MAX_COSINE_DISTANCE = 0.5
@@ -64,9 +65,19 @@ def load_detection_output(detection_path, video_path, frame_id):
 
     return boxes, scores, classes
 
-# Leave OUTPUT_PATH=None if you don't want to output visualize video
+# Discards all objects that are too far from ROI.
+def inROI(detection, roi_poly,
+          ROI_PROXIMITY=0):
+    x, y = detection.to_xyah()[:2]
+    center = Point(x, y)
+    dist = roi_poly.distance(center)
+    # print(detection.class_name, dist)
+    return dist <= ROI_PROXIMITY
+    
 
-def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config):
+# Leave OUTPUT_PATH=None if you don't want to output visualize video
+def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config,
+             CROP_PADDING=0.15):
     
     class_names = [c.strip() for c in open('./data/labels/obj.names').readlines()]
     # yolo = YoloV3(classes=len(class_names))
@@ -87,6 +98,7 @@ def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config):
 
     pts = [deque(maxlen=2000) for _ in range(500000)]
     track_history = [deque(maxlen=2000) for _ in range(500000)]
+    track_img = [[10**9, None] for _ in range(500000)]
 
     frame_count = int(vid.get(cv2.CAP_PROP_FRAME_COUNT))
     frame_id = 0
@@ -99,6 +111,7 @@ def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config):
         if img is None:
             print('Completed')
             break
+        img_copy = img.copy()
         frame_id = frame_id + 1
         t1 = time.time()
 
@@ -120,6 +133,16 @@ def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config):
         classes = np.array([d.class_name for d in detections])
         indices = preprocessing.non_max_suppression(boxs, classes, NMS_MAX_OVERLAP, scores)
         detections = [detections[i] for i in indices]
+        
+        detection_space = []
+        for d in detections:
+            pts = tuple(d.to_xyah()[:2])
+            detection_space.append(Point(pts))
+        detection_space = MultiPoint(detection_space)
+        
+        # detections = [detection for detection in detections if inROI(detection, config['roi_poly'])]
+        # [print(d.class_name) for d in detections]
+        # break
 
         tracker.predict()
         # for track in tracker.tracks:
@@ -140,32 +163,42 @@ def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config):
             if not track.is_confirmed() or track.time_since_update > 1:
                 continue
             bbox = track.to_tlbr()
+            bbox = [int(x) for x in bbox]
             class_name= track.get_class()
             color = colors[int(track.track_id) % len(colors)]
             color = [i * 255 for i in color]
 
+            center = (bbox[0] + bbox[2]) // 2, (bbox[1] + bbox[3]) // 2
+            roi_centroid = config['roi_poly'].centroid
+            dist = Point(center).distance(roi_centroid)
+            if dist < track_img[track.track_id][0]:
+                track_img[track.track_id][0] = dist
+                xmin = np.clip(int(bbox[0] - (bbox[2] - bbox[0]) * CROP_PADDING), 0, width)
+                ymin = np.clip(int(bbox[1] - (bbox[3] - bbox[1]) * CROP_PADDING), 0, height)
+                xmax = np.clip(int(bbox[2] + (bbox[2] - bbox[0]) * CROP_PADDING), 0, width)
+                ymax = np.clip(int(bbox[3] + (bbox[3] - bbox[1]) * CROP_PADDING), 0, height)
+                track_img[track.track_id][1] = img_copy[ymin:ymax, xmin:xmax].copy()
+                
 
-            coord2 = [[int(bbox[0]),int(bbox[1])], 
-                [int(bbox[2]),int(bbox[1])], 
-                [int(bbox[2]),int(bbox[3])], 
-                [int(bbox[0]),int(bbox[3])]]
+            coord2 = [[bbox[0],bbox[1]], 
+                [bbox[2],bbox[1]], 
+                [bbox[2],bbox[3]], 
+                [bbox[0],bbox[3]]]
             bounding_box = Polygon(coord2)
             
             if OUTPUT_PATH is not None:
-                cv2.rectangle(img, (int(bbox[0]),int(bbox[1])), (int(bbox[2]),int(bbox[3])), color, 1)
-                cv2.rectangle(img, (int(bbox[0]), int(bbox[1])), (int(bbox[0])+(len(class_name)
-                        +len(str(track.track_id)))*12, int(bbox[1]+20)), color, -1)
-                cv2.putText(img, class_name+"."+str(track.track_id), (int(bbox[0]), int(bbox[1]+10)), 0, 0.5,
+                cv2.rectangle(img, (bbox[0],bbox[1]), (bbox[2],bbox[3]), color, 1)
+                cv2.rectangle(img, (bbox[0], bbox[1]), (bbox[0]+(len(class_name)
+                        +len(str(track.track_id)))*12, bbox[1]+20), color, -1)
+                cv2.putText(img, class_name+"."+str(track.track_id), (bbox[0], bbox[1]+10), 0, 0.5,
                         (255,255,255), 2)
             
             if config['roi_poly'].intersects(bounding_box):
                 
                 # Chỉ vẽ các phương tiện cần đếm
                 if int(class_name) > 0:
-                    center = (int(((bbox[0]) + (bbox[2]))/2), int(((bbox[1])+(bbox[3]))/2))
                     pts[track.track_id].append(center)
-                    track_history[track.track_id].append([center,frame_id,class_name, track.track_id])
-                    
+                    track_history[track.track_id].append([center, frame_id, class_name, track.track_id])
                     if OUTPUT_PATH is not None:
                         for j in range(1, len(pts[track.track_id])):
                             if pts[track.track_id][j-1] is None or pts[track.track_id][j] is None:
@@ -185,32 +218,53 @@ def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config):
     if OUTPUT_PATH is not None:
         out.release()
         
-    return track_history, frame_count
+    return track_history, track_img, frame_count
 
 def run_video(VIDEO_NAME):
     
     t = time.time()
-    CONFIG_PATH = 'zone_config/{}.txt'.format(VIDEO_NAME)
+    CONFIG_PATH = 'zone_config/sub5/{}.txt'.format(VIDEO_NAME)
     VIDEO_PATH = '/dataset/Students/Team1/25_video/{}.mp4'.format(VIDEO_NAME)
-    OUTPUT_PATH = '/dataset/Students/Team2/tracking/ss_{}.mp4'.format(VIDEO_NAME)
-    DETECTION_PATH = '/storage/detection_result/test_set_a/{}/'.format(VIDEO_NAME)
-    SUBMISSION_FILE = 'data/video/submission_{}.txt'.format(VIDEO_NAME)
+    VIDEO_PATH = '/storage/video_cut/{}.mp4'.format(VIDEO_NAME)
+    OUTPUT_PATH = '/dataset/Students/Team2/tracking/tmp/{}.mp4'.format(VIDEO_NAME)
+    DETECTION_PATH = '/storage/detection_result/test_set_a/sub7/{}/'.format(VIDEO_NAME)
+    CLASS_CROP_PATH = '/dataset/Students/Team2/crops/tmp/{}/'.format(VIDEO_NAME)
+    SUBMISSION_FILE = '/storage/submissions/tmp/submission_{}.txt'.format(VIDEO_NAME)
     config = load_config(CONFIG_PATH)
     print(VIDEO_PATH)
     print(OUTPUT_PATH)
     print(DETECTION_PATH)
     print(SUBMISSION_FILE)
     
-    track_history, frame_count = tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config)
+    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+    if os.path.exists(CLASS_CROP_PATH):
+        shutil.rmtree(CLASS_CROP_PATH)
+    for x in ['0','1','2','3','4']:
+        os.makedirs(os.path.join(CLASS_CROP_PATH, x), exist_ok=True)
+    os.makedirs(os.path.dirname(SUBMISSION_FILE), exist_ok=True)
     
-    count(track_history, frame_count, SUBMISSION_FILE, VIDEO_NAME, config)
+    track_history, track_img, frame_count = tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config)
+    
+    count(track_history, track_img, frame_count, SUBMISSION_FILE, VIDEO_NAME, CLASS_CROP_PATH, config)
     t = time.time()-t
     t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
     print('video processing:', t)
     
 
 def main():
-    for i in [10]:
+    video_list = [1,2,3] # track1
+    video_list = [6,7,8] # track2
+    video_list = [11,12,13] # track3
+    video_list = [16,17,18] # track4
+    video_list = [21,22,23,24] # track5
+    video_list = [10,5] # track6
+    video_list = [9] # track7
+    video_list = [4,20,19] # track8
+    video_list = [15,25,14] # track9
+    
+    video_list = [1]
+    
+    for i in video_list:
         run_video("cam_{:02d}".format(i))
     
 if __name__ == "__main__":

@@ -31,7 +31,9 @@ MetadataCatalog.get("team2").set(thing_classes=["0","1","2","3","4"])
 
 MODEL_BASE_URL = "/mmlabstorage/workingspace/khanhmmlab/aicity/weights/FasterRCNN/"
 MODEL_MODES = ["R_101_FPN_Baseline_Day.pth",
-               "R_101_FPN_Baseline_Night.pth",]
+               "R_101_FPN_Baseline_Night.pth",
+               "R_101_FPN_Baseline_Rain.pth",
+               ]
 
 def getConfig(mode):
     BASELINE = "COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml"
@@ -50,7 +52,7 @@ def getConfig(mode):
 # Kiểm tra xem hai object có giao nhau quá nhiều hay không
 # Nếu giao nhau vượt qua iou_threshold thì sẽ cân nhắc giữ lại 
 # object có confidence cao hơn.
-def check_intersect(box1, box2, iou_threshold = 0.9):
+def check_intersect(box1, box2, iou_threshold = 0.85):
     box1 = [int(box) for box in box1]
     box2 = [int(box) for box in box2]
     box1 = [[box1[0], box1[1]],
@@ -161,16 +163,26 @@ def test_video(VIDEO_PATH, OUTPUT_PATH, mode=0,
 
 def main():
     # Video cần xử lý
-    VIDEO_PATH_0 = [
-                  "/dataset/Students/Team1/25_video/cam_01.mp4",
-                  "/dataset/Students/Team1/25_video/cam_04.mp4",
-                  "/dataset/Students/Team1/25_video/cam_06.mp4",
+    VIDEO_PATH_10 = [
+                  "/dataset/Students/Team1/25_video/cam_02.mp4",
+    ]
+    VIDEO_PATH_11 = [
                   "/dataset/Students/Team1/25_video/cam_07.mp4",
-                  "/dataset/Students/Team1/25_video/cam_09.mp4",
+    ]
+    VIDEO_PATH_12 = [
+                  "/dataset/Students/Team1/25_video/cam_21.mp4",
+    ]
+    VIDEO_PATH_13 = [
+                  "/dataset/Students/Team1/25_video/cam_06.mp4",
+    ]
+    VIDEO_PATH_14 = [
+                  "/dataset/Students/Team1/25_video/cam_11.mp4",
+    ]
+    VIDEO_PATH_15 = [
+                  "/dataset/Students/Team1/25_video/cam_23.mp4",
     ]
     # Video cần xử lý
     VIDEO_PATH_1 = [
-                  "/dataset/Students/Team1/25_video/cam_02.mp4",
                   "/dataset/Students/Team1/25_video/cam_03.mp4",
                   "/dataset/Students/Team1/25_video/cam_05.mp4",
                   "/dataset/Students/Team1/25_video/cam_08.mp4",
@@ -180,7 +192,7 @@ def main():
                   "/dataset/Students/Team1/25_video/cam_14.mp4",
                   "/dataset/Students/Team1/25_video/cam_16.mp4",
                   "/dataset/Students/Team1/25_video/cam_18.mp4",
-                  "/dataset/Students/Team1/25_video/cam_21.mp4",
+                  "/dataset/Students/Team1/25_video/cam_01.mp4",
     ]
     # Video cần xử lý
     VIDEO_PATH_3 = [
@@ -193,12 +205,12 @@ def main():
     VIDEO_PATH_4 = [
                   "/dataset/Students/Team1/25_video/cam_10.mp4",
                   "/dataset/Students/Team1/25_video/cam_12.mp4",
-                  "/dataset/Students/Team1/25_video/cam_23.mp4",
                   "/dataset/Students/Team1/25_video/cam_24.mp4",
+                  "/dataset/Students/Team1/25_video/cam_04.mp4",
+                  "/dataset/Students/Team1/25_video/cam_09.mp4",
     ]
     # Video cần xử lý
     VIDEO_PATH_5 = [
-                  "/dataset/Students/Team1/25_video/cam_11.mp4",
                   "/dataset/Students/Team1/25_video/cam_13.mp4",
                   "/dataset/Students/Team1/25_video/cam_22.mp4",
                   "/dataset/Students/Team1/25_video/cam_25.mp4",
@@ -209,25 +221,44 @@ def main():
             test_video(VIDEO_PATH, OUTPUT_PATH, mode)
                   
     # Thư mục chứa các thư mục label
-    OUTPUT_PATH = "/storage/detection_result/test_set_a"
-    p0 = Process(target=test_dir, args=(VIDEO_PATH_0, OUTPUT_PATH, 0))
-    p1 = Process(target=test_dir, args=(VIDEO_PATH_1, OUTPUT_PATH, 1))
-    p2 = Process(target=test_dir, args=(VIDEO_PATH_2, OUTPUT_PATH, 0))
-    p3 = Process(target=test_dir, args=(VIDEO_PATH_3, OUTPUT_PATH, 1))
-    p4 = Process(target=test_dir, args=(VIDEO_PATH_4, OUTPUT_PATH, 0))
-    p5 = Process(target=test_dir, args=(VIDEO_PATH_5, OUTPUT_PATH, 1))
-    p0.start()
-    p1.start()
-    p2.start()
-    p3.start()
-    p4.start()
-    p5.start()
-    p0.join()
-    p1.join()
-    p2.join()
-    p3.join()
-    p4.join()
-    p5.join()
+    OUTPUT_PATH = "/storage/detection_result/test_set_a/sub7/"
+    p10 = Process(target=test_dir, args=(VIDEO_PATH_10, OUTPUT_PATH, 2))
+    p11 = Process(target=test_dir, args=(VIDEO_PATH_11, OUTPUT_PATH, 2))
+    p12 = Process(target=test_dir, args=(VIDEO_PATH_12, OUTPUT_PATH, 2))
+    p13 = Process(target=test_dir, args=(VIDEO_PATH_13, OUTPUT_PATH, 2))
+    p14 = Process(target=test_dir, args=(VIDEO_PATH_14, OUTPUT_PATH, 2))
+    p15 = Process(target=test_dir, args=(VIDEO_PATH_15, OUTPUT_PATH, 2))
+    p10.start()
+    p11.start()
+    p12.start()
+    p13.start()
+    p14.start()
+    p15.start()
+    print('STARTED')
+    p10.join()
+    p11.join()
+    p12.join()
+    p13.join()
+    p14.join()
+    p15.join()
+    # p0 = Process(target=test_dir, args=(VIDEO_PATH_0, OUTPUT_PATH, 2))
+    # p1 = Process(target=test_dir, args=(VIDEO_PATH_1, OUTPUT_PATH, 1))
+    # p2 = Process(target=test_dir, args=(VIDEO_PATH_2, OUTPUT_PATH, 0))
+    # p3 = Process(target=test_dir, args=(VIDEO_PATH_3, OUTPUT_PATH, 1))
+    # p4 = Process(target=test_dir, args=(VIDEO_PATH_4, OUTPUT_PATH, 0))
+    # p5 = Process(target=test_dir, args=(VIDEO_PATH_5, OUTPUT_PATH, 1))
+    # p0.start()
+    # p1.start()
+    # p2.start()
+    # p3.start()
+    # p4.start()
+    # p5.start()
+    # p0.join()
+    # p1.join()
+    # p2.join()
+    # p3.join()
+    # p4.join()
+    # p5.join()
     # test_video(VIDEO_PATH, OUTPUT_PATH, mode=1)
 
 if __name__ == "__main__":
