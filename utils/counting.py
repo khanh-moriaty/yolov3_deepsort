@@ -3,7 +3,8 @@ import sys
 from shapely.geometry import Point
 import os
 import cv2
-from utils.classify_resnet50v2 import predict_class
+from statistics import mode
+# from utils.classify_resnet50v2 import predict_class
 
 # Sắp xếp các head moi theo độ dài tới head
 # Sắp xếp các tail moi theo độ dài tới tail
@@ -75,6 +76,7 @@ def count(track_history, track_img, frame_count,
     sys.stdout = log_file
     
     for track in track_history:
+        # print(track)
         if (len(track) < 5):
             continue
         track_id = track[-1][3]
@@ -98,13 +100,14 @@ def count(track_history, track_img, frame_count,
         pred_class = track[-1][2]
         
         # Majority Voting:
-        
+        class_votes = [history[2] for history in track]
+        pred_class = mode(class_votes[:][2])
 
         # Ad-hoc solution:
-        if VIDEO_NAME[-2:] in ['11']: # cam_11 không có class 3 và 4
-            if pred_class in [3, 4]: pred_class = 1
-        if VIDEO_NAME[-2:] in ['21', '22']: # cam_21, cam_22 không có class 3, 4
-            if pred_class in [3, 4]: pred_class = 2
+        # if VIDEO_NAME[-2:] in ['11']: # cam_11 không có class 3 và 4
+        #     if pred_class in [3, 4]: pred_class = 1
+        # if VIDEO_NAME[-2:] in ['21', '22']: # cam_21, cam_22 không có class 3, 4
+        #     if pred_class in [3, 4]: pred_class = 2
         
         if pred_class == -1: 
             continue

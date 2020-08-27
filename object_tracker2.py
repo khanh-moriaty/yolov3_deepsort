@@ -21,6 +21,7 @@ from utils.counting import count
 
 from _collections import deque
 from shapely.geometry import Point, MultiPoint, Polygon
+from shapely.ops import nearest_points
 
 
 MAX_COSINE_DISTANCE = 0.5
@@ -136,9 +137,11 @@ def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config,
         
         detection_space = []
         for d in detections:
-            pts = tuple(d.to_xyah()[:2])
-            detection_space.append(Point(pts))
-        detection_space = MultiPoint(detection_space)
+            tmp = tuple(d.to_xyah()[:2])
+            detection_space.append(Point(tmp))
+        detection_multipoint = MultiPoint(detection_space)
+        [print(x.wkt, end=' ') for x in detection_space]
+        print(detection_multipoint.wkt)
         
         # detections = [detection for detection in detections if inROI(detection, config['roi_poly'])]
         # [print(d.class_name) for d in detections]
@@ -168,7 +171,7 @@ def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config,
             color = colors[int(track.track_id) % len(colors)]
             color = [i * 255 for i in color]
 
-            center = (bbox[0] + bbox[2]) // 2, (bbox[1] + bbox[3]) // 2
+            center = ((bbox[0] + bbox[2]) // 2, (bbox[1] + bbox[3]) // 2)
             roi_centroid = config['roi_poly'].centroid
             dist = Point(center).distance(roi_centroid)
             if dist < track_img[track.track_id][0]:
@@ -179,6 +182,14 @@ def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config,
                 ymax = np.clip(int(bbox[3] + (bbox[3] - bbox[1]) * CROP_PADDING), 0, height)
                 track_img[track.track_id][1] = img_copy[ymin:ymax, xmin:xmax].copy()
                 
+                
+            # Finds nearest bbox to track and determines its class
+            center_pts = Point(center)
+            nearest_bbox = nearest_points(detection_multipoint, center_pts)
+            print(nearest_bbox[0].wkt, detection_space.index(nearest_bbox[0]), 
+                  classes[detection_space.index(nearest_bbox[0])])
+            detection_class_name = classes[detection_space.index(nearest_bbox[0])]
+            
 
             coord2 = [[bbox[0],bbox[1]], 
                 [bbox[2],bbox[1]], 
@@ -188,17 +199,18 @@ def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config,
             
             if OUTPUT_PATH is not None:
                 cv2.rectangle(img, (bbox[0],bbox[1]), (bbox[2],bbox[3]), color, 1)
-                cv2.rectangle(img, (bbox[0], bbox[1]), (bbox[0]+(len(class_name)
+                cv2.rectangle(img, (bbox[0], bbox[1]), (bbox[0]+(len(detection_class_name)
                         +len(str(track.track_id)))*12, bbox[1]+20), color, -1)
-                cv2.putText(img, class_name+"."+str(track.track_id), (bbox[0], bbox[1]+10), 0, 0.5,
+                cv2.putText(img, detection_class_name+"."+str(track.track_id), (bbox[0], bbox[1]+10), 0, 0.5,
                         (255,255,255), 2)
             
             if config['roi_poly'].intersects(bounding_box):
                 
                 # Chỉ vẽ các phương tiện cần đếm
-                if int(class_name) > 0:
+                if True: # int(class_name) > 0:
                     pts[track.track_id].append(center)
-                    track_history[track.track_id].append([center, frame_id, class_name, track.track_id])
+                    track_history[track.track_id].append([center, frame_id, detection_class_name, track.track_id])
+                    print(frame_id, track.track_id, class_name, detection_class_name)
                     if OUTPUT_PATH is not None:
                         for j in range(1, len(pts[track.track_id])):
                             if pts[track.track_id][j-1] is None or pts[track.track_id][j] is None:
