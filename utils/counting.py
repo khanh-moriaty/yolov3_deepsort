@@ -3,7 +3,7 @@ import sys
 from shapely.geometry import Point
 import os
 import cv2
-from statistics import mode
+import scipy.stats
 # from utils.classify_resnet50v2 import predict_class
 
 # Sắp xếp các head moi theo độ dài tới head
@@ -101,7 +101,7 @@ def count(track_history, track_img, frame_count,
         
         # Majority Voting:
         class_votes = [history[2] for history in track]
-        pred_class = mode(class_votes[:][2])
+        pred_class = int(scipy.stats.mode(class_votes)[0])
 
         # Ad-hoc solution:
         # if VIDEO_NAME[-2:] in ['11']: # cam_11 không có class 3 và 4
