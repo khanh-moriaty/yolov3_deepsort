@@ -1,4 +1,5 @@
 from shapely.geometry import Polygon
+import numpy as np
 
 # Định dạng của file config:
 ################################################################################
@@ -62,24 +63,24 @@ def load_config(config_path):
     
     config['mois_head'] = []
     for i in range(n):
-        coord = [int(x) for x in lines[i].split()[:2]]
+        coord = np.array([int(x) for x in lines[i].split()[:2]])
         config['mois_head'].append(coord)
     lines = lines[n:]
     
     config['mois_tail'] = []
     for i in range(m):
-        coord = [int(x) for x in lines[i].split()[:2]]
+        coord = np.array([int(x) for x in lines[i].split()[:2]])
         config['mois_tail'].append(coord)
     lines = lines[m:]
     
-    config['mois'] = [[] for _ in range(k)]
-    config['mois_shift'] = [0 for _ in range(k)]
-    for i in range(k):
+    config['mois'] = [[] for _ in range(k+1)]
+    config['mois_shift'] = [0 for _ in range(k+1)]
+    for i in range(k+1):
         id_list = [int(x) for x in lines[i].split()]
         for index in range(0, len(id_list)-1, 2):
             config['mois'][i].append([id_list[index], id_list[index+1]])
         config['mois_shift'][i] = id_list[-1]
-    lines = lines[k:]
+    lines = lines[k+1:]
     
     config['check_regions'] = [[] for _ in range(m)]
     config['check_poly'] = [None for _ in range(m)]
@@ -88,11 +89,18 @@ def load_config(config_path):
         for index in range(0, len(coord_list), 2):
             config['check_regions'][i].append([coord_list[index], coord_list[index+1]])
         config['check_poly'][i] = Polygon(config['check_regions'][i])
+    lines = lines[m:]
     
     config['roi'] = []
-    coord_list = [int(x) for x in lines[-1].split()]
+    coord_list = [int(x) for x in lines[0].split()]
     for index in range(0, len(coord_list), 2):
         config['roi'].append([coord_list[index], coord_list[index+1]])
     config['roi_poly'] = Polygon(config['roi'])
+    
+    config['roi_btc'] = []
+    coord_list = [int(x) for x in lines[1].split()]
+    for index in range(0, len(coord_list), 2):
+        config['roi_btc'].append([coord_list[index], coord_list[index+1]])
+    config['roi_btc_poly'] = Polygon(config['roi_btc'])
     
     return config

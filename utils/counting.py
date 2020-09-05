@@ -1,99 +1,82 @@
 import numpy as np
 import sys
-from shapely.geometry import Point
 import os
 import cv2
+import math
+import time
 import scipy.stats
-# from utils.classify_resnet50v2 import predict_class
-
-# Sắp xếp các head moi theo độ dài tới head
-# Sắp xếp các tail moi theo độ dài tới tail
-def find_moi_nearest(head, tail, config):
-
-    mois_head = config['mois_head']
-    mois_tail = config['mois_tail']
+from shapely.geometry import Point, Polygon
+from utils.motion_proposal import find_moi, confirm_moi
+from utils.prediction import predict_track_history
+from utils.track_merging import merge_tracks
     
-    index_head, index_tail = [], []
-    for index, moi_head in enumerate(mois_head):
-        dist = Point(tuple(head)).distance(Point(tuple(moi_head)))
-        index_head.append((index, dist))
-    index_head.sort(key=lambda a: a[1])
-    index_head = [x[0] for x in index_head]
-    for index, moi_tail in enumerate(mois_tail):
-        dist = Point(tuple(tail)).distance(Point(tuple(moi_tail)))
-        index_tail.append((index, dist))
-    index_tail.sort(key=lambda a: a[1])
-    index_tail = [x[0] for x in index_tail]
-    
-    return index_head, index_tail, tail
-    
-# Tìm xem vector nào tạo góc nhỏ nhất so với vector (tail - head)
-def find_moi_cosine(head, tail, config):
-    pass
-    
-def find_moi(head, tail, config):
-    # Chỉ quan tâm đếm tọa độ tâm của object (head[0] và tail[0])
-    head, tail = head[0], tail[0]
-    index_head, index_tail, tail = find_moi_nearest(head, tail, config)
-    # Chỉ quan tâm đến head và tail gần nhất
-    return index_head[0], index_tail[0], tail
-    
-def confirm_moi(index_head, index_tail, center, config):
-    
-    print("index_head =", index_head, "index_tail =", index_tail, end=' ')
-    mois = config['mois']
-    
-    center = Point(center)
-    for index, moi in enumerate(mois):
-        # Tìm xem head và tail tìm được có phải MOI đang xét hay không.
-        if [index_head, index_tail] in moi:
-            # Confirmation process: Kiểm tra tail có nằm trong check_poly hay không.
-            if config['check_poly'][index_tail].contains(center):
-                # Nếu có thì MOI đang xét chính là MOI của object.
-                print("center valid, moi =", index)
-                return index
-            else:
-                # Nếu điều kiện trên không thỏa mãn thì object chưa ra khỏi ROI.
-                # Có 2 trường hợp có thể xảy ra:
-                # - Track bị mất dấu trước khi object ra khỏi ROI.
-                # - Thuật toán find_moi trả về sai (head, tail).
-                print("center invalid, moi = -1")
-                return -1
-            
-    # Trường hợp vẫn chưa tìm được MOI khớp với (head, tail)
-    print("MOI invalid, moi = -1")
-    return -1
+def valid_track(track, MINIMUM_DISTANCE=20):
+    if (len(track) < 3):
+        return False
+    pt_head = Point(track[0][0])
+    pt_tail = Point(track[-1][0])
+    if pt_head.distance(pt_tail) <= MINIMUM_DISTANCE: 
+        return False
+    return True
     
 def count(track_history, track_img, frame_count, 
-          SUBMISSION_FILE, VIDEO_NAME, CLASS_CROP_PATH, config,
-          MINIMUM_DISTANCE=20):
+          SUBMISSION_FILE, VIDEO_NAME, CLASS_CROP_PATH, config):
 
     file = open(SUBMISSION_FILE, "w")
     track_history = [list(x) for x in track_history]
+    track_history = [track for track in track_history if valid_track(track)]
+    print('track history len =', len(track_history))
 
     log_file = open(SUBMISSION_FILE[:-4] + "_log.txt", 'w')
     stdout = sys.stdout
     sys.stdout = log_file
     
-    for track in track_history:
+    t = time.time()
+    roi_poly = config['roi_btc_poly']
+    track_enter, track_enter_taylor, track_escape, track_escape_taylor = predict_track_history(track_history, roi_poly)
+    
+    track_history, track_enter, track_enter_taylor, track_escape, track_escape_taylor = \
+        merge_tracks(track_history, track_enter, track_enter_taylor, track_escape, track_escape_taylor)
+        
+    sys.stdout = stdout
+    print('merge time: ', time.time() - t)
+    sys.stdout = log_file
+    
+    print(track_history)
+    counted_track = []
+    
+    for track, enter, escape in zip(track_history, track_enter, track_escape):
         # print(track)
-        if (len(track) < 5):
-            continue
+        if escape is None:
+            x, y, frame_shift = None, None, None
+        else:
+            x, y, frame_shift = escape
         track_id = track[-1][3]
         print("track_id: ", track_id)
-        pt_head = Point(track[0][0])
-        pt_tail = Point(track[-1][0])
-        if pt_head.distance(pt_tail) <= MINIMUM_DISTANCE: 
+        if enter is None or escape is None or enter[0] is None or escape[0] is None:
+            head, tail, out_point = find_moi(track[0][0], track[-1][0], config)
+        else:
+            head, tail, out_point = find_moi(enter[:2], escape[:2], config)
+        if head == -1 or tail == -1:
             continue
-        head, tail, out_point = find_moi(track[0], track[-1], config)
+        moi = confirm_moi(head, tail, track[-1][0], config)
         moi = confirm_moi(head, tail, out_point, config)
         if moi == -1: 
             continue
+        if moi >= config['k']:
+            continue
         
-        frame_id = track[-1][1] + config['mois_shift'][moi]
+        if frame_shift is None or frame_shift < 0: # Dời frame theo config nếu không thể predict
+            frame_id = track[-1][1] + config['mois_shift'][moi]
+            moi_vector = np.array(track[-1][0]) - np.array(track[-2][0])
+            center = (track[-1][0] + moi_vector * config['mois_shift'][moi]).astype(int)
+        else:
+            frame_id = track[-1][1] + frame_shift
+            center = x, y
         if frame_id <= 0: frame_id = 1
         if frame_id > frame_count: 
             continue
+        
         
         img_crop = track_img[track_id][1]
         # pred_class = predict_class(img_crop)
@@ -114,14 +97,19 @@ def count(track_history, track_img, frame_count,
         crop_path = "{}_{:05d}_{}.jpg".format(VIDEO_NAME, frame_id, track_id)
         crop_path = os.path.join(CLASS_CROP_PATH, str(pred_class), crop_path)
         cv2.imwrite(crop_path, img_crop)
-        
-        moi_vector = np.array(track[-1][0]) - np.array(track[-2][0])
-        center = (track[-1][0] + moi_vector * config['mois_shift'][moi]).astype(int)
+        if pred_class == 0:
+            continue
         
         kq = VIDEO_NAME + " " + str(frame_id) + " " + str(moi + 1) + " " \
             + str(pred_class) + " " + str(center[0]) + " " + str(center[1])
         
-        print(kq)
+        if enter is not None and enter[0] is not None:
+            track[0][0] = (enter[0], enter[1])
+        if escape is not None and escape[0] is not None:
+            track[-1][0] = (escape[0], escape[1])
+            track[-1][1] = frame_id
+        counted_track.append(track)
+        print(kq + " " + str(track_id))
         file.write("".join(kq))
         file.write("\n")
             
@@ -130,3 +118,4 @@ def count(track_history, track_img, frame_count,
     sys.stdout = stdout
     log_file.flush()
     log_file.close()
+    return counted_track

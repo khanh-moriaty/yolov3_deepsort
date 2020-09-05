@@ -5,7 +5,7 @@ from itertools import repeat
 
 INP_PATH = '/dataset/Students/Team1/25_video/extract_frames/'
 # INP_PATH = '/storage/detection_result/test_set_a/sub1/'
-OUT_PATH = '/storage/detection_result/test_set_a/sub2/'
+OUT_PATH = '/storage/detection_result/test_set_a/sub13_team1/'
 
 INP_DIRS = [
             # 'cam_01/det_txt/',
@@ -31,43 +31,35 @@ OUT_DIRS = [
             'cam_24/',
 ]
 
-# INP_DIRS = [
-#             'cam_02',
-#             'cam_03',
-#             'cam_05',
-#             'cam_06',
-#             'cam_07',
-#             'cam_08',
-#             'cam_11',
-#             'cam_13',
-#             'cam_15',
-#             'cam_17',
-#             'cam_19',
-#             'cam_20',
-#             'cam_21',
-#             'cam_22',
-#             'cam_23',
-#             'cam_25',
-# ]
+INP_DIRS = [
+            'cam_02/new_det_txt/',
+            'cam_03/new_det_txt/',
+            'cam_05/new_det_txt/',
+            'cam_08/new_det_txt/',
+            'cam_11/new_det_txt/',
+            'cam_13/new_det_txt/',
+            'cam_15/new_det_txt/',
+            'cam_17/new_det_txt/',
+            'cam_19/new_det_txt/',
+            'cam_20/new_det_txt/',
+            'cam_22/new_det_txt/',
+            'cam_25/new_det_txt/',
+]
 
-# OUT_DIRS = [
-#             'cam_02',
-#             'cam_03',
-#             'cam_05',
-#             'cam_06',
-#             'cam_07',
-#             'cam_08',
-#             'cam_11',
-#             'cam_13',
-#             'cam_15',
-#             'cam_17',
-#             'cam_19',
-#             'cam_20',
-#             'cam_21',
-#             'cam_22',
-#             'cam_23',
-#             'cam_25',
-# ]
+OUT_DIRS = [
+            'cam_02/new_det_txt/',
+            'cam_03/new_det_txt/',
+            'cam_05/new_det_txt/',
+            'cam_08/new_det_txt/',
+            'cam_11/new_det_txt/',
+            'cam_13/new_det_txt/',
+            'cam_15/new_det_txt/',
+            'cam_17/new_det_txt/',
+            'cam_19/new_det_txt/',
+            'cam_20/new_det_txt/',
+            'cam_22/new_det_txt/',
+            'cam_25/new_det_txt/',
+]
 
 IMG_WIDTH = 1280
 IMG_HEIGHT = 720
@@ -107,7 +99,7 @@ def copy_file(fn, inp_dir, out_dir):
 def copy_dir(inp_dir, out_dir):
     os.makedirs(out_dir, exist_ok=True)
     dir = os.listdir(inp_dir)
-    pool = Pool(500)
+    pool = Pool(100)
     pool.starmap(copy_file, zip(dir, repeat(inp_dir), repeat(out_dir)))
     
 
