@@ -6,8 +6,8 @@ from shapely.geometry import Point
 import math
 
 def potential_match(track1, track2,
-                    MAX_MATCH_DISTANCE=80, MAX_MATCH_VECTOR=math.pi/4, 
-                    MIN_VALID_VECTOR_DISTANCE=20):
+                    MAX_MATCH_DISTANCE=80, MAX_MATCH_VECTOR=math.pi/5, 
+                    MIN_VALID_VECTOR_DISTANCE=0):
     track1, enter1, enter_taylor1, escape1, escape_taylor1 = track1
     track2, enter2, enter_taylor2, escape2, escape_taylor2 = track2
     time = track2[0][1] - track1[-1][1]

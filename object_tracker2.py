@@ -272,14 +272,14 @@ def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config,
 def run_video(VIDEO_NAME):
     
     t = time.time()
-    CONFIG_PATH = 'zone_config/sub23/{}.txt'.format(VIDEO_NAME)
+    CONFIG_PATH = 'zone_config/sub26/{}.txt'.format(VIDEO_NAME)
     VIDEO_PATH = '/dataset/Students/Team1/25_video/{}.mp4'.format(VIDEO_NAME)
-    # VIDEO_PATH = '/storage/video_cut/2p/{}.mp4'.format(VIDEO_NAME)
-    OUTPUT_PATH = '/dataset/Students/Team2/tracking/sub23/{}.mp4'.format(VIDEO_NAME)
-    REID_OUTPUT_PATH = '/dataset/Students/Team2/reid/sub23/{}.mp4'.format(VIDEO_NAME)
+    VIDEO_PATH = '/storage/video_cut/5p/{}.mp4'.format(VIDEO_NAME)
+    OUTPUT_PATH = '/dataset/Students/Team2/tracking/sub28/{}.mp4'.format(VIDEO_NAME)
+    REID_OUTPUT_PATH = '/dataset/Students/Team2/reid/sub28/{}.mp4'.format(VIDEO_NAME)
     DETECTION_PATH = '/storage/detection_result/test_set_a/sub15/{}/'.format(VIDEO_NAME)
-    CLASS_CROP_PATH = '/dataset/Students/Team2/crops/sub23/{}/'.format(VIDEO_NAME)
-    SUBMISSION_FILE = '/storage/submissions/sub23/submission_{}.txt'.format(VIDEO_NAME)
+    CLASS_CROP_PATH = '/dataset/Students/Team2/crops/sub28/{}/'.format(VIDEO_NAME)
+    SUBMISSION_FILE = '/storage/submissions/sub28/submission_{}.txt'.format(VIDEO_NAME)
     config = load_config(CONFIG_PATH)
     print(VIDEO_PATH)
     print(OUTPUT_PATH)
@@ -318,6 +318,9 @@ def main():
     video_list = [9] # track7
     video_list = [4,20,19] # track8
     video_list = [15,25,14] # track9
+    
+    video_list = [14] # track9
+    video_list = [15] # track9
     
     # video_list = [1,2,3,15] # track1
     # video_list = [6,7,8,19] # track2

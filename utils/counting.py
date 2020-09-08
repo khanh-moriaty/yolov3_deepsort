@@ -11,7 +11,7 @@ from utils.prediction import predict_track_history
 from utils.track_merging import merge_tracks
     
 def valid_track(track, MINIMUM_DISTANCE=20):
-    if (len(track) < 3):
+    if (len(track) < 4):
         return False
     pt_head = Point(track[0][0])
     pt_tail = Point(track[-1][0])
@@ -101,7 +101,7 @@ def count(track_history, track_img, frame_count,
             continue
         
         kq = VIDEO_NAME + " " + str(frame_id) + " " + str(moi + 1) + " " \
-            + str(pred_class) + " " + str(center[0]) + " " + str(center[1])
+            + str(pred_class) + " " + str(center[0]) + " " + str(center[1]) + " " + str(track_id)
         
         if enter is not None and enter[0] is not None:
             track[0][0] = (enter[0], enter[1])
@@ -109,7 +109,7 @@ def count(track_history, track_img, frame_count,
             track[-1][0] = (escape[0], escape[1])
             track[-1][1] = frame_id
         counted_track.append(track)
-        print(kq + " " + str(track_id))
+        print(kq)
         file.write("".join(kq))
         file.write("\n")
             

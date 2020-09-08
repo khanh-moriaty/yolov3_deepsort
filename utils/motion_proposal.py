@@ -9,6 +9,11 @@ def calc_dist_point2line(pts, line_head, line_tail):
     line_tail = np.asarray(line_tail)
     return np.abs(np.cross(line_tail - line_head, line_head - pts) / np.linalg.norm(line_tail - line_head))
 
+def calc_dist_point2point(p1, p2):
+    p1 = Point(p1)
+    p2 = Point(p2)
+    return p1.distance(p2)
+
 # Sắp xếp các head moi theo độ dài tới head
 # Sắp xếp các tail moi theo độ dài tới tail
 def find_moi_nearest(head, tail, mois_head, mois_tail, mois):
@@ -23,9 +28,11 @@ def find_moi_nearest(head, tail, mois_head, mois_tail, mois):
             moi_head = mois_head[index_head]
             moi_tail = mois_tail[index_tail]
             if moi_head is None or moi_tail is None: continue
-            dist = calc_dist_point2line(head, moi_head, moi_tail)
+            # dist = calc_dist_point2line(head, moi_head, moi_tail)
+            dist = calc_dist_point2point(head, moi_head)
             head_list.append((index_head, dist))
-            dist = calc_dist_point2line(tail, moi_head, moi_tail)
+            # dist = calc_dist_point2line(tail, moi_head, moi_tail)
+            dist = calc_dist_point2point(tail, moi_tail)
             tail_list.append((index_tail, dist))
     
     # for index, moi_head in enumerate(mois_head):
@@ -38,8 +45,10 @@ def find_moi_nearest(head, tail, mois_head, mois_tail, mois):
     #     tail_list.append((index, dist))
         
     head_list.sort(key=lambda a: a[1])
+    print(head_list)
     head_list = [x[0] for x in head_list]    
     tail_list.sort(key=lambda a: a[1])
+    print(tail_list)
     tail_list = [x[0] for x in tail_list]
     
     return head_list, tail_list, tail
@@ -100,6 +109,16 @@ def find_moi(head, tail, config):
         return -1, -1, -1
     return index_head[0], index_tail[0], tail
     
+def confirm_moi_check(index_head, index_tail, moi):
+    chk_head = False
+    chk_tail = False
+    for arr in moi:
+        if arr[0] == index_head:
+            chk_head = True
+        if arr[1] == index_tail:
+            chk_tail = True
+    return chk_head and chk_tail
+    
 def confirm_moi(index_head, index_tail, center, config,
                 MAX_CONFIRM_DISTANCE=15):
     
@@ -109,7 +128,7 @@ def confirm_moi(index_head, index_tail, center, config,
     center = Point(center)
     for index, moi in enumerate(mois):
         # Tìm xem head và tail tìm được có phải MOI đang xét hay không.
-        if [index_head, index_tail] in moi:
+        if confirm_moi_check(index_head, index_tail, moi):
             # Confirmation process: Kiểm tra tail có nằm trong check_poly hay không.
             if config['check_poly'][index_tail].distance(center) <= MAX_CONFIRM_DISTANCE:
                 # Nếu có thì MOI đang xét chính là MOI của object.

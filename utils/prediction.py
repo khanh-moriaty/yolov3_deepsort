@@ -85,7 +85,7 @@ def predict_escape_core(taylor, roi_poly, predict_tail):
         bbox_poly = Polygon(bbox)
     except:
         return res
-    forward = inROI(bbox_poly, roi_poly)
+    forward = (inROI(bbox_poly, roi_poly) == predict_tail)
     
     if forward: # If in ROI: searches forward
         search_range = range(1000)
