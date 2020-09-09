@@ -388,13 +388,13 @@ def pipeline():
         DETECTION_PATH = '/data/detection_result/{}/'.format(VIDEO_NAME)
         SUBMISSION_FILE = '/data/submission_output/submission_{}.txt'.format(VIDEO_NAME)
         t = time.time()
-        track_history, track_img, frame_count = tracking(VIDEO_PATH, OUTPUT_PATH=None, DETECTION_PATH, config)
+        track_history, track_img, frame_count = tracking(VIDEO_PATH, None, DETECTION_PATH, config)
         t = time.time() - t
         t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
         print('video processing:', t)
         t = time.time()
         
-        track_history = count(track_history, track_img, frame_count, SUBMISSION_FILE, VIDEO_NAME, CLASS_CROP_PATH=None, config)
+        track_history = count(track_history, track_img, frame_count, SUBMISSION_FILE, VIDEO_NAME, None, config)
         print('counting: {:.2f}'.format(time.time() - t))
         
     def track_and_count(VIDEO_LIST):
