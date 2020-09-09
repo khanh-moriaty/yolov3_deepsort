@@ -31,7 +31,7 @@ MetadataCatalog.get("team2").set(thing_classes=["0","1","2","3","4"])
 # mode = 2: trời tối
 # mode = 3: trời tối trắng đen
 
-MODEL_BASE_URL = "/mmlabstorage/workingspace/khanhmmlab/aicity/weights/FasterRCNN/"
+MODEL_BASE_URL = "/storage/weights/FasterRCNN/"
 MODEL_MODES = ["R_101_FPN_Baseline_Day.pth",
                "R_101_FPN_Baseline_Rain.pth",
                "R_101_FPN_Baseline_Night.pth",
