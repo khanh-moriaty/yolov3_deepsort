@@ -59,7 +59,7 @@ def load_detection_output(detection_path, video_path, frame_id):
             content = line.split()
             classes.append(int(content[0]))
             boxes.append([float(x) for x in content[1:5]])
-            scores.append(1.0) # float(content[5]))))            
+            scores.append(float(content[5]))
     boxes = np.array(boxes)
     scores = np.array(scores)
     classes = np.array(classes)
@@ -146,8 +146,8 @@ def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config,
         boxs = np.array([d.tlwh for d in detections])
         scores = np.array([d.confidence for d in detections])
         classes = np.array([d.class_name for d in detections])
-        indices = preprocessing.non_max_suppression(boxs, classes, NMS_MAX_OVERLAP, scores)
-        detections = [detections[i] for i in indices]
+        # indices = preprocessing.non_max_suppression(boxs, classes, NMS_MAX_OVERLAP, scores)
+        # detections = [detections[i] for i in indices]
         
         # [print(x.wkt, end=' ') for x in detection_space]
         # print(detection_multipoint.wkt)
@@ -319,11 +319,11 @@ def main():
     video_list = [15,25,14] # track9
     
     video_list = [1,2,3,15] # track1
-    video_list = [6,7,8,19,25] # track2
-    video_list = [11,12,13,14] # track3
-    video_list = [16,17,20,4,5] # track4
-    video_list = [21,22,23,24,18] # track5
-    video_list = [10,9] # track6
+    # video_list = [6,7,8,19,25] # track2
+    # video_list = [11,12,13,14] # track3
+    # video_list = [16,17,20,4,5] # track4
+    # video_list = [21,22,23,24,18] # track5
+    # video_list = [10,9] # track6
     
     # video_list = [22]
     
@@ -333,6 +333,83 @@ def main():
     t = time.time() - t
     t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
     print("Total time:", t)
+    
+import detection
+from itertools import repeat
+from multiprocessing import Pool
+
+def pipeline():
+    DAY_VIDEO = [
+                 "cam_01",
+                 "cam_04",
+                 "cam_09",
+                 "cam_10",
+                 "cam_12",
+                 "cam_14",
+                 "cam_16",
+                 "cam_18",
+                 "cam_24",
+                 ]
+    RAIN_VIDEO = [
+                 "cam_02",
+                 "cam_06",
+                 "cam_07",
+                 "cam_11",
+                 "cam_21",
+                 "cam_23",
+                 ]
+    NIGHT_VIDEO = [
+                 "cam_03",
+                 "cam_05",
+                 "cam_08",
+                 "cam_13",
+                 "cam_15",
+                 "cam_17",
+                 "cam_19",
+                 ]
+    BW_VIDEO = [
+                 "cam_20",
+                 "cam_22",
+                 "cam_25",
+                 ]
+    
+    VIDEO_PATH = "/data/test_data/"
+    OUTPUT_PATH = "/data/detection_result/"
+    VIDEO_LIST = [os.path.join(VIDEO_PATH, "cam_{:02d}.mp4".format(x+1)) for x in range(25)]
+    pool = Pool(6)
+    pool.starmap(detection.test_video, zip(VIDEO_LIST, repeat(OUTPUT_PATH)))
+    
+    def track_and_count_core(VIDEO_NAME):
+        CONFIG_PATH = 'zone_config/sub26/{}.txt'.format(VIDEO_NAME)
+        VIDEO_PATH = '/dataset/Students/Team1/25_video/{}.mp4'.format(VIDEO_NAME)
+        # VIDEO_PATH = '/storage/video_cut/5p/{}.mp4'.format(VIDEO_NAME)
+        DETECTION_PATH = '/storage/detection_result/test_set_a/sub15/{}/'.format(VIDEO_NAME)
+        SUBMISSION_FILE = '/storage/submissions/sub29/submission_{}.txt'.format(VIDEO_NAME)
+        t = time.time()
+        track_history, track_img, frame_count = tracking(VIDEO_PATH, OUTPUT_PATH=None, DETECTION_PATH, config)
+        t = time.time() - t
+        t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
+        print('video processing:', t)
+        t = time.time()
+        
+        track_history = count(track_history, track_img, frame_count, SUBMISSION_FILE, VIDEO_NAME, CLASS_CROP_PATH=None, config)
+        print('counting: {:.2f}'.format(time.time() - t))
+        
+    def track_and_count(VIDEO_LIST):
+        for VIDEO_NAME in VIDEO_LIST:
+            track_and_count_core(VIDEO_NAME)
+        
+    VIDEO_LIST = [
+                  [1,2,3,15],
+                  [6,7,8,19,25],
+                  [11,12,13,14],
+                  [16,17,20,4,5],
+                  [21,22,23,24,18],
+                  [10,9],
+                  ]
+    VIDEO_LIST = [["cam_{:02d}.mp4".format(x) for x in video_list] for video_list in VIDEO_LIST]
+    pool = Pool(len(VIDEO_LIST))
+    pool.map(track_and_count, VIDEO_LIST)
     
 if __name__ == "__main__":
     main()

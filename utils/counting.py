@@ -94,9 +94,10 @@ def count(track_history, track_img, frame_count,
         
         if pred_class == -1: 
             continue
-        crop_path = "{}_{:05d}_{}.jpg".format(VIDEO_NAME, frame_id, track_id)
-        crop_path = os.path.join(CLASS_CROP_PATH, str(pred_class), crop_path)
-        cv2.imwrite(crop_path, img_crop)
+        if CLASS_CROP_PATH is not None:
+            crop_path = "{}_{:05d}_{}.jpg".format(VIDEO_NAME, frame_id, track_id)
+            crop_path = os.path.join(CLASS_CROP_PATH, str(pred_class), crop_path)
+            cv2.imwrite(crop_path, img_crop)
         if pred_class == 0:
             continue
         
