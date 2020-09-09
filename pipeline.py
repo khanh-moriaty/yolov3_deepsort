@@ -373,6 +373,8 @@ def pipeline():
                  "cam_25",
                  ]
     
+    t = time.time()
+    
     VIDEO_PATH = "/data/test_data/"
     OUTPUT_PATH = "/data/detection_result/"
     VIDEO_LIST = [os.path.join(VIDEO_PATH, "cam_{:02d}.mp4".format(x+1)) for x in range(25)]
@@ -381,10 +383,10 @@ def pipeline():
     
     def track_and_count_core(VIDEO_NAME):
         CONFIG_PATH = 'zone_config/sub26/{}.txt'.format(VIDEO_NAME)
-        VIDEO_PATH = '/dataset/Students/Team1/25_video/{}.mp4'.format(VIDEO_NAME)
+        VIDEO_PATH = '/data/test_data/{}.mp4'.format(VIDEO_NAME)
         # VIDEO_PATH = '/storage/video_cut/5p/{}.mp4'.format(VIDEO_NAME)
-        DETECTION_PATH = '/storage/detection_result/test_set_a/sub15/{}/'.format(VIDEO_NAME)
-        SUBMISSION_FILE = '/storage/submissions/sub29/submission_{}.txt'.format(VIDEO_NAME)
+        DETECTION_PATH = '/data/detection_result/{}/'.format(VIDEO_NAME)
+        SUBMISSION_FILE = '/data/submission_output/submission_{}.txt'.format(VIDEO_NAME)
         t = time.time()
         track_history, track_img, frame_count = tracking(VIDEO_PATH, OUTPUT_PATH=None, DETECTION_PATH, config)
         t = time.time() - t
@@ -410,6 +412,10 @@ def pipeline():
     VIDEO_LIST = [["cam_{:02d}.mp4".format(x) for x in video_list] for video_list in VIDEO_LIST]
     pool = Pool(len(VIDEO_LIST))
     pool.map(track_and_count, VIDEO_LIST)
+    
+    t = time.time() - t
+    t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
+    print('end2end pipeline:', t)
     
 if __name__ == "__main__":
     main()
