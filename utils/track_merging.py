@@ -13,9 +13,9 @@ def potential_match(track1, track2,
     time = track2[0][1] - track1[-1][1]
     if escape1 is None:
         return False
-    track1_predict = Point(predict_with_taylor(escape_taylor1, time)[:2])
+    track1_predict = Point(predict_with_taylor(escape_taylor1, time, predict_tail=True)[:2])
     # track2_predict = Point(predict_with_taylor(enter_taylor2, time)[:2])
-    print(track1[-1][3], track2[-1][3], time, predict_with_taylor(escape_taylor1, time), track2[0][0])
+    print(track1[-1][3], track2[-1][3], time, predict_with_taylor(escape_taylor1, time, predict_tail=True), track2[0][0])
     
     track1 = Point(track1[-1][0])
     track2 = Point(track2[0][0])

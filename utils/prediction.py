@@ -59,13 +59,13 @@ def calc_head_vector(history, MAX_HISTORY_LENGTH=5):
     move_y = history[0][0][1] - history[-1][0][1]
     return normalize_vector(move_x, move_y)
 
-def predict_with_taylor(taylor, time):
+def predict_with_taylor(taylor, time, predict_tail):
     direction, displacement, bbox_width, bbox_height = taylor
     move_x, move_y, move_magnitude = direction
     x0, y0, v, a, b, c = displacement
     w, v_w, a_w = bbox_width
     h, v_h, a_h = bbox_height
-    if time < 0:
+    if (time < 0):
         move_x, move_y = -move_x, -move_y
     x = x0 + move_x * abs(v * time + 1/2 * a * time * time)
     y = y0 + move_y * abs(v * time + 1/2 * a * time * time)
@@ -76,7 +76,7 @@ def predict_with_taylor(taylor, time):
 def predict_escape_core(taylor, roi_poly, predict_tail):
     
     res = None, None, None
-    x, y, w, h = predict_with_taylor(taylor, 0)
+    x, y, w, h = predict_with_taylor(taylor, 0, predict_tail)
     bbox = [[x - w/2, y - h/2],
             [x + w/2, y - h/2],
             [x + w/2, y + h/2],
@@ -85,7 +85,7 @@ def predict_escape_core(taylor, roi_poly, predict_tail):
         bbox_poly = Polygon(bbox)
     except:
         return res
-    forward = (inROI(bbox_poly, roi_poly) == predict_tail)
+    forward = inROI(bbox_poly, roi_poly)
     
     if forward: # If in ROI: searches forward
         search_range = range(1000)
@@ -96,7 +96,7 @@ def predict_escape_core(taylor, roi_poly, predict_tail):
         
     
     for t in search_range:
-        x, y, w, h = predict_with_taylor(taylor, t)
+        x, y, w, h = predict_with_taylor(taylor, t, predict_tail)
         bbox = [[x - w/2, y - h/2],
                 [x + w/2, y - h/2],
                 [x + w/2, y + h/2],
