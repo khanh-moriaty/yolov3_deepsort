@@ -267,5 +267,19 @@ def main():
     p8.join()
     # test_video(VIDEO_PATH, OUTPUT_PATH, mode=1)
 
+def pipeline():
+    t = time.time()
+    MODE_LIST = [0,1,2,0,2,1,1,2,0,0,1,0,2,0,2,0,2,0,2,3,1,3,1,0,3]
+    VIDEO_PATH = "/data/test_data/"
+    OUTPUT_PATH = "/data/detection_result/"
+    VIDEO_LIST = [os.path.join(VIDEO_PATH, "cam_{:02d}.mp4".format(x+1)) for x in range(25)]
+    pool = Pool(6)
+    print("hello world")
+    pool.starmap(det.test_video, zip(VIDEO_LIST, repeat(OUTPUT_PATH), MODE_LIST))
+    
+    t = time.time() - t
+    t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
+    print('detection time:', t)
+
 if __name__ == "__main__":
     main()

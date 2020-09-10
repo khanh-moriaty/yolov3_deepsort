@@ -24,8 +24,6 @@ from _collections import deque
 from shapely.geometry import Point, MultiPoint, Polygon
 from shapely.ops import nearest_points
 
-import detection as det
-from itertools import repeat
 from multiprocessing import Pool
 
 MAX_COSINE_DISTANCE = 0.5
@@ -346,50 +344,7 @@ def main():
     print("Total time:", t)
     
 def pipeline():
-    DAY_VIDEO = [
-                 "cam_01",
-                 "cam_04",
-                 "cam_09",
-                 "cam_10",
-                 "cam_12",
-                 "cam_14",
-                 "cam_16",
-                 "cam_18",
-                 "cam_24",
-                 ]
-    RAIN_VIDEO = [
-                 "cam_02",
-                 "cam_06",
-                 "cam_07",
-                 "cam_11",
-                 "cam_21",
-                 "cam_23",
-                 ]
-    NIGHT_VIDEO = [
-                 "cam_03",
-                 "cam_05",
-                 "cam_08",
-                 "cam_13",
-                 "cam_15",
-                 "cam_17",
-                 "cam_19",
-                 ]
-    BW_VIDEO = [
-                 "cam_20",
-                 "cam_22",
-                 "cam_25",
-                 ]
     
-    MODE_LIST = [0,1,2,0,2,1,1,2,0,0,1,0,2,0,2,0,2,0,2,3,1,3,1,0,3]
-    
-    t = time.time()
-    
-    VIDEO_PATH = "/data/test_data/"
-    OUTPUT_PATH = "/data/detection_result/"
-    VIDEO_LIST = [os.path.join(VIDEO_PATH, "cam_{:02d}.mp4".format(x+1)) for x in range(25)]
-    pool = Pool(6)
-    print("hello world")
-    pool.starmap(det.test_video, zip(VIDEO_LIST, repeat(OUTPUT_PATH), MODE_LIST))
     
     def track_and_count_core(VIDEO_NAME):
         CONFIG_PATH = 'zone_config/sub26/{}.txt'.format(VIDEO_NAME)
@@ -423,9 +378,6 @@ def pipeline():
     pool = Pool(len(VIDEO_LIST))
     pool.map(track_and_count, VIDEO_LIST)
     
-    t = time.time() - t
-    t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
-    print('end2end pipeline:', t)
     
 if __name__ == "__main__":
     pipeline()
