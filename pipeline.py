@@ -397,4 +397,4 @@ def small_pipeline():
     
     
 if __name__ == "__main__":
-    small_pipeline()
+    pipeline()
