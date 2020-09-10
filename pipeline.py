@@ -349,6 +349,7 @@ def track_and_count_core(VIDEO_NAME):
     # VIDEO_PATH = '/storage/video_cut/5p/{}.mp4'.format(VIDEO_NAME)
     DETECTION_PATH = '/data/detection_result/{}/'.format(VIDEO_NAME)
     SUBMISSION_FILE = '/data/submission_output/submission_{}.txt'.format(VIDEO_NAME)
+    config = load_config(CONFIG_PATH)
     t = time.time()
     track_history, track_img, frame_count = tracking(VIDEO_PATH, None, DETECTION_PATH, config)
     t = time.time() - t
@@ -362,6 +363,7 @@ def track_and_count_core(VIDEO_NAME):
 def track_and_count(VIDEO_LIST):
     for VIDEO_NAME in VIDEO_LIST:
         track_and_count_core(VIDEO_NAME)
+        
 def pipeline():
 
     VIDEO_LIST = [
@@ -372,7 +374,7 @@ def pipeline():
                   [21,22,23,24,18],
                   [10,9],
                   ]
-    VIDEO_LIST = [["cam_{:02d}.mp4".format(x) for x in video_list] for video_list in VIDEO_LIST]
+    VIDEO_LIST = [["cam_{:02d}".format(x) for x in video_list] for video_list in VIDEO_LIST]
     pool = Pool(len(VIDEO_LIST))
     pool.map(track_and_count, VIDEO_LIST)
     
@@ -381,7 +383,7 @@ def small_pipeline():
     VIDEO_LIST = [
                   [1]
                   ]
-    VIDEO_LIST = [["cam_{:02d}.mp4".format(x) for x in video_list] for video_list in VIDEO_LIST]
+    VIDEO_LIST = [["cam_{:02d}".format(x) for x in video_list] for video_list in VIDEO_LIST]
     pool = Pool(len(VIDEO_LIST))
     pool.map(track_and_count, VIDEO_LIST)
     
