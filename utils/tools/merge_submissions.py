@@ -25,4 +25,4 @@ def merge(SUBMISSION_DIR):
     fo.close()
 
 if __name__ == '__main__':
-    merge('/storage/submissions/sub29/')
+    merge('/data/submission_output/')
