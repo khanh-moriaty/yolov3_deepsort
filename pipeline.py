@@ -278,7 +278,7 @@ def run_video(VIDEO_NAME):
     OUTPUT_PATH = '/dataset/Students/Team2/tracking/sub30/{}.mp4'.format(VIDEO_NAME)
     REID_OUTPUT_PATH = '/dataset/Students/Team2/reid/sub30/{}.mp4'.format(VIDEO_NAME)
     # DETECTION_PATH = '/storage/detection_result/test_set_a/sub15/{}/'.format(VIDEO_NAME)
-    DETECTION_PATH = '/storage/detection_result/test_set_a/sub30/{}/'.format(VIDEO_NAME)
+    DETECTION_PATH = '/storage/detection_result/test_set_a/sub15/{}/'.format(VIDEO_NAME)
     CLASS_CROP_PATH = '/dataset/Students/Team2/crops/sub30/{}/'.format(VIDEO_NAME)
     SUBMISSION_FILE = '/storage/submissions/sub30/submission_{}.txt'.format(VIDEO_NAME)
     config = load_config(CONFIG_PATH)
@@ -327,12 +327,14 @@ def main():
     # video_list = [21,22,23,24,18] # track5
     # video_list = [10,9] # track6
     
-    video_list = [1,4]
-    video_list = [9]
-    video_list = [10]
-    video_list = [12]
-    video_list = [14,24]
-    video_list = [16,18]
+    # video_list = [1,4]
+    # video_list = [9]
+    # video_list = [10]
+    # video_list = [12]
+    # video_list = [14,24]
+    # video_list = [16,18]
+    
+    video_list = [17]
     
     # video_list = [22]
     
@@ -374,12 +376,11 @@ def pipeline():
     args = parser.parse_args()
     
     VIDEO_LIST = [
-                  [1,2,3,15],
                   [6,7,8,19,25],
-                  [11,12,13,14],
+                  [11,12,13,14,15],
                   [16,17,20,4,5],
-                  [21,22,23,24,18],
-                  [10,9],
+                  [21,22,23,24,18,2,3],
+                  [10,9,1],
                   ]
     VIDEO_LIST = [["cam_{:02d}".format(x) for x in video_list] for video_list in VIDEO_LIST]
     track_and_count(VIDEO_LIST[args.index])
@@ -409,3 +410,4 @@ def small_pipeline():
     
 if __name__ == "__main__":
     pipeline()
+    # main()
