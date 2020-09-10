@@ -292,18 +292,22 @@ def pipeline():
     print('detection time:', t)
 
 def small_pipeline():
+    parser = argparse.ArgumentParser(
+        description='')
+    parser.add_argument('--index', type=int, default=0,
+                        help='index of process')
+    args = parser.parse_args()
+    if args.index == 4: return
     t = time.time()
-    MODE_LIST = [0,1,2,0,2,1,1,2,0,0,1,0,2,0,2,0,2,0,2,3,1,3,1,0,3]
+    MODE_LIST = [[0],[1],[2],[3]]
     VIDEO_PATH = "/data/test_data/"
     OUTPUT_PATH = "/data/detection_result/"
-    VIDEO_LIST = [os.path.join(VIDEO_PATH, "cam_{:02d}.mp4".format(x+1)) for x in range(1)]
-    pool = Pool(1)
-    print("hello world")
-    pool.starmap(test_video, zip(VIDEO_LIST, repeat(OUTPUT_PATH), MODE_LIST))
-    
-    t = time.time() - t
-    t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
-    print('detection time:', t)
+    VIDEO_LIST = [["cam_01"],
+                  ["cam_11"],
+                  ["cam_17"],
+                  ["cam_20"]]
+    for x, mode in zip(VIDEO_LIST[args.index], MODE_LIST[args.index]):
+        test_video(x, OUTPUT_PATH, mode)
 
 if __name__ == "__main__":
     pipeline()

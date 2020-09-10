@@ -387,13 +387,24 @@ def pipeline():
     # pool.map(track_and_count, VIDEO_LIST)
     
 def small_pipeline():
-
+    parser = argparse.ArgumentParser(
+        description='')
+    parser.add_argument('--index', type=int, default=0,
+                        help='index of process')
+    args = parser.parse_args()
+    
+    if args.index == 4: return
+    
     VIDEO_LIST = [
-                  [1]
+                  [1],
+                  [11],
+                  [17],
+                  [20],
                   ]
     VIDEO_LIST = [["cam_{:02d}".format(x) for x in video_list] for video_list in VIDEO_LIST]
-    pool = Pool(len(VIDEO_LIST))
-    pool.map(track_and_count, VIDEO_LIST)
+    track_and_count(VIDEO_LIST[args.index])
+    # pool = Pool(len(VIDEO_LIST))
+    # pool.map(track_and_count, VIDEO_LIST)
     
     
 if __name__ == "__main__":
