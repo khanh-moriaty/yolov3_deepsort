@@ -282,5 +282,19 @@ def pipeline():
     t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
     print('detection time:', t)
 
+def small_pipeline():
+    t = time.time()
+    MODE_LIST = [0,1,2,0,2,1,1,2,0,0,1,0,2,0,2,0,2,0,2,3,1,3,1,0,3]
+    VIDEO_PATH = "/data/test_data/"
+    OUTPUT_PATH = "/data/detection_result/"
+    VIDEO_LIST = [os.path.join(VIDEO_PATH, "cam_{:02d}.mp4".format(x+1)) for x in range(1)]
+    pool = Pool(1)
+    print("hello world")
+    pool.starmap(test_video, zip(VIDEO_LIST, repeat(OUTPUT_PATH), MODE_LIST))
+    
+    t = time.time() - t
+    t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
+    print('detection time:', t)
+
 if __name__ == "__main__":
-    pipeline()
+    small_pipeline()

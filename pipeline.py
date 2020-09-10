@@ -376,6 +376,15 @@ def pipeline():
     pool = Pool(len(VIDEO_LIST))
     pool.map(track_and_count, VIDEO_LIST)
     
+def small_pipeline():
+
+    VIDEO_LIST = [
+                  [1]
+                  ]
+    VIDEO_LIST = [["cam_{:02d}.mp4".format(x) for x in video_list] for video_list in VIDEO_LIST]
+    pool = Pool(len(VIDEO_LIST))
+    pool.map(track_and_count, VIDEO_LIST)
+    
     
 if __name__ == "__main__":
-    pipeline()
+    small_pipeline()
