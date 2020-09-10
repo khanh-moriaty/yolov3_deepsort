@@ -280,8 +280,8 @@ def pipeline():
     MODE_LIST = [[0,1,2,0,2],[1,1,2,0,0],[1,0,2,0,2],[0,2,0,2,3],[1,3,1,0,3]]
     VIDEO_PATH = "/data/test_data/"
     OUTPUT_PATH = "/data/detection_result/"
-    VIDEO_LIST = [[os.path.join(VIDEO_PATH, "cam_{:02d}.mp4".format(i*j+1)) for i in range(5)] for j in range(5)]
-    for x, mode in VIDEO_LIST[args.index], MODE_LIST[args.index]:
+    VIDEO_LIST = [[os.path.join(VIDEO_PATH, "cam_{:02d}.mp4".format(5*j+i+1)) for i in range(5)] for j in range(5)]
+    for x, mode in zip(VIDEO_LIST[args.index], MODE_LIST[args.index]):
         test_video(x, OUTPUT_PATH, mode)
     # pool = Pool(6)
     # print("hello world")
@@ -306,4 +306,4 @@ def small_pipeline():
     print('detection time:', t)
 
 if __name__ == "__main__":
-    small_pipeline()
+    pipeline()
