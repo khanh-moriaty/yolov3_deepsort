@@ -16,7 +16,7 @@ def merge(SUBMISSION_DIR):
         lines = fi.read().splitlines()
         for line in lines:
             content = line.split()[:4]
-            content = line.split()
+            # content = line.split()
             if content[3] == '0': continue
             content = ' '.join(content)
             fo.write(content + '\n')
