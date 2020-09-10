@@ -18,7 +18,8 @@ from detectron2.data import MetadataCatalog, DatasetCatalog
 from detectron2.data.datasets import register_coco_instances
 
 from shapely.geometry import Polygon
-from multiprocessing import Process
+from multiprocessing import Process, Pool
+from itertools import repeat
 
 register_coco_instances("team2", {}, 
                         "/content/team2_dataset/augment/labels.json", 
@@ -275,11 +276,11 @@ def pipeline():
     VIDEO_LIST = [os.path.join(VIDEO_PATH, "cam_{:02d}.mp4".format(x+1)) for x in range(25)]
     pool = Pool(6)
     print("hello world")
-    pool.starmap(det.test_video, zip(VIDEO_LIST, repeat(OUTPUT_PATH), MODE_LIST))
+    pool.starmap(test_video, zip(VIDEO_LIST, repeat(OUTPUT_PATH), MODE_LIST))
     
     t = time.time() - t
     t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
     print('detection time:', t)
 
 if __name__ == "__main__":
-    main()
+    pipeline()

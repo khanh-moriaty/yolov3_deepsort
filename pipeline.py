@@ -343,29 +343,27 @@ def main():
     t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
     print("Total time:", t)
     
+def track_and_count_core(VIDEO_NAME):
+    CONFIG_PATH = 'zone_config/sub26/{}.txt'.format(VIDEO_NAME)
+    VIDEO_PATH = '/data/test_data/{}.mp4'.format(VIDEO_NAME)
+    # VIDEO_PATH = '/storage/video_cut/5p/{}.mp4'.format(VIDEO_NAME)
+    DETECTION_PATH = '/data/detection_result/{}/'.format(VIDEO_NAME)
+    SUBMISSION_FILE = '/data/submission_output/submission_{}.txt'.format(VIDEO_NAME)
+    t = time.time()
+    track_history, track_img, frame_count = tracking(VIDEO_PATH, None, DETECTION_PATH, config)
+    t = time.time() - t
+    t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
+    print('video processing:', t)
+    t = time.time()
+       
+    track_history = count(track_history, track_img, frame_count, SUBMISSION_FILE, VIDEO_NAME, None, config)
+    print('counting: {:.2f}'.format(time.time() - t))
+        
+def track_and_count(VIDEO_LIST):
+    for VIDEO_NAME in VIDEO_LIST:
+        track_and_count_core(VIDEO_NAME)
 def pipeline():
-    
-    
-    def track_and_count_core(VIDEO_NAME):
-        CONFIG_PATH = 'zone_config/sub26/{}.txt'.format(VIDEO_NAME)
-        VIDEO_PATH = '/data/test_data/{}.mp4'.format(VIDEO_NAME)
-        # VIDEO_PATH = '/storage/video_cut/5p/{}.mp4'.format(VIDEO_NAME)
-        DETECTION_PATH = '/data/detection_result/{}/'.format(VIDEO_NAME)
-        SUBMISSION_FILE = '/data/submission_output/submission_{}.txt'.format(VIDEO_NAME)
-        t = time.time()
-        track_history, track_img, frame_count = tracking(VIDEO_PATH, None, DETECTION_PATH, config)
-        t = time.time() - t
-        t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
-        print('video processing:', t)
-        t = time.time()
-        
-        track_history = count(track_history, track_img, frame_count, SUBMISSION_FILE, VIDEO_NAME, None, config)
-        print('counting: {:.2f}'.format(time.time() - t))
-        
-    def track_and_count(VIDEO_LIST):
-        for VIDEO_NAME in VIDEO_LIST:
-            track_and_count_core(VIDEO_NAME)
-        
+
     VIDEO_LIST = [
                   [1,2,3,15],
                   [6,7,8,19,25],
