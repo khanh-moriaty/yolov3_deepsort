@@ -99,10 +99,11 @@ def post_processing(pred_bboxes, pred_classes, pred_scores):
             out_list[out_labels[pred_classes[index]]].append((pred_bboxes[index], pred_scores[index]))
     return out_list
 
-def test_video(VIDEO_PATH, OUTPUT_PATH, mode=0,
+def test_video(VIDEO_PATH, OUTPUT_PATH, mode,
                SUBDIVISION=20):
     cfg = getConfig(mode)
     predictor = DefaultPredictor(cfg)
+    print('test_video', VIDEO_PATH, OUTPUT_PATH)
     vid = cv2.VideoCapture(VIDEO_PATH)
     FRAME_BASE_NAME = os.path.basename(VIDEO_PATH)
     FRAME_BASE_NAME = os.path.splitext(FRAME_BASE_NAME)[0] + "_{:05d}.txt"

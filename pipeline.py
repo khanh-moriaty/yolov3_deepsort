@@ -24,6 +24,9 @@ from _collections import deque
 from shapely.geometry import Point, MultiPoint, Polygon
 from shapely.ops import nearest_points
 
+import detection as det
+from itertools import repeat
+from multiprocessing import Pool
 
 MAX_COSINE_DISTANCE = 0.5
 NN_BUDGET = None
@@ -342,10 +345,6 @@ def main():
     t = datetime.datetime.fromtimestamp(t).strftime('%H:%M:%S')
     print("Total time:", t)
     
-import detection
-from itertools import repeat
-from multiprocessing import Pool
-
 def pipeline():
     DAY_VIDEO = [
                  "cam_01",
@@ -388,9 +387,9 @@ def pipeline():
     VIDEO_PATH = "/data/test_data/"
     OUTPUT_PATH = "/data/detection_result/"
     VIDEO_LIST = [os.path.join(VIDEO_PATH, "cam_{:02d}.mp4".format(x+1)) for x in range(25)]
-    MODE_LIST = []
     pool = Pool(6)
-    pool.starmap(detection.test_video, zip(VIDEO_LIST, repeat(OUTPUT_PATH), MODE_LIST))
+    print("hello world")
+    pool.starmap(det.test_video, zip(VIDEO_LIST, repeat(OUTPUT_PATH), MODE_LIST))
     
     def track_and_count_core(VIDEO_NAME):
         CONFIG_PATH = 'zone_config/sub26/{}.txt'.format(VIDEO_NAME)
@@ -429,4 +428,4 @@ def pipeline():
     print('end2end pipeline:', t)
     
 if __name__ == "__main__":
-    main()
+    pipeline()
