@@ -274,11 +274,12 @@ def run_video(VIDEO_NAME):
     CONFIG_PATH = 'zone_config/sub26/{}.txt'.format(VIDEO_NAME)
     VIDEO_PATH = '/dataset/Students/Team1/25_video/{}.mp4'.format(VIDEO_NAME)
     # VIDEO_PATH = '/storage/video_cut/5p/{}.mp4'.format(VIDEO_NAME)
-    OUTPUT_PATH = '/dataset/Students/Team2/tracking/sub29/{}.mp4'.format(VIDEO_NAME)
-    REID_OUTPUT_PATH = '/dataset/Students/Team2/reid/sub29/{}.mp4'.format(VIDEO_NAME)
-    DETECTION_PATH = '/storage/detection_result/test_set_a/sub15/{}/'.format(VIDEO_NAME)
-    CLASS_CROP_PATH = '/dataset/Students/Team2/crops/sub29/{}/'.format(VIDEO_NAME)
-    SUBMISSION_FILE = '/storage/submissions/sub29/submission_{}.txt'.format(VIDEO_NAME)
+    OUTPUT_PATH = '/dataset/Students/Team2/tracking/sub30/{}.mp4'.format(VIDEO_NAME)
+    REID_OUTPUT_PATH = '/dataset/Students/Team2/reid/sub30/{}.mp4'.format(VIDEO_NAME)
+    # DETECTION_PATH = '/storage/detection_result/test_set_a/sub15/{}/'.format(VIDEO_NAME)
+    DETECTION_PATH = '/storage/detection_result/test_set_a/sub30/{}/'.format(VIDEO_NAME)
+    CLASS_CROP_PATH = '/dataset/Students/Team2/crops/sub30/{}/'.format(VIDEO_NAME)
+    SUBMISSION_FILE = '/storage/submissions/sub30/submission_{}.txt'.format(VIDEO_NAME)
     config = load_config(CONFIG_PATH)
     print(VIDEO_PATH)
     print(OUTPUT_PATH)
@@ -318,12 +319,19 @@ def main():
     video_list = [4,20,19] # track8
     video_list = [15,25,14] # track9
     
-    video_list = [1,2,3,15] # track1
+    # video_list = [1,2,3,15] # track1
     # video_list = [6,7,8,19,25] # track2
     # video_list = [11,12,13,14] # track3
     # video_list = [16,17,20,4,5] # track4
     # video_list = [21,22,23,24,18] # track5
     # video_list = [10,9] # track6
+    
+    video_list = [1,4]
+    video_list = [9]
+    video_list = [10]
+    video_list = [12]
+    video_list = [14,24]
+    video_list = [16,18]
     
     # video_list = [22]
     
@@ -373,13 +381,16 @@ def pipeline():
                  "cam_25",
                  ]
     
+    MODE_LIST = [0,1,2,0,2,1,1,2,0,0,1,0,2,0,2,0,2,0,2,3,1,3,1,0,3]
+    
     t = time.time()
     
     VIDEO_PATH = "/data/test_data/"
     OUTPUT_PATH = "/data/detection_result/"
     VIDEO_LIST = [os.path.join(VIDEO_PATH, "cam_{:02d}.mp4".format(x+1)) for x in range(25)]
+    MODE_LIST = []
     pool = Pool(6)
-    pool.starmap(detection.test_video, zip(VIDEO_LIST, repeat(OUTPUT_PATH)))
+    pool.starmap(detection.test_video, zip(VIDEO_LIST, repeat(OUTPUT_PATH), MODE_LIST))
     
     def track_and_count_core(VIDEO_NAME):
         CONFIG_PATH = 'zone_config/sub26/{}.txt'.format(VIDEO_NAME)
