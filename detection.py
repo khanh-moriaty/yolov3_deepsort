@@ -277,12 +277,12 @@ def pipeline():
                         help='index of process')
     args = parser.parse_args()
     t = time.time()
-    MODE_LIST = [0,1,2,0,2,1,1,2,0,0,1,0,2,0,2,0,2,0,2,3,1,3,1,0,3]
+    MODE_LIST = [[0,1,2,0,2],[1,1,2,0,0],[1,0,2,0,2],[0,2,0,2,3],[1,3,1,0,3]]
     VIDEO_PATH = "/data/test_data/"
     OUTPUT_PATH = "/data/detection_result/"
     VIDEO_LIST = [[os.path.join(VIDEO_PATH, "cam_{:02d}.mp4".format(i*j+1)) for i in range(5)] for j in range(5)]
-    for x in VIDEO_LIST[args.index]:
-        test_video(x)
+    for x, mode in VIDEO_LIST[args.index], MODE_LIST[args.index]:
+        test_video(x, OUTPUT_PATH, mode)
     # pool = Pool(6)
     # print("hello world")
     # pool.starmap(test_video, zip(VIDEO_LIST, repeat(OUTPUT_PATH), MODE_LIST))
