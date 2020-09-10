@@ -302,10 +302,10 @@ def small_pipeline():
     MODE_LIST = [[0],[1],[2],[3]]
     VIDEO_PATH = "/data/test_data/"
     OUTPUT_PATH = "/data/detection_result/"
-    VIDEO_LIST = [["cam_01"],
-                  ["cam_11"],
-                  ["cam_17"],
-                  ["cam_20"]]
+    VIDEO_LIST = [[os.path.join(VIDEO_PATH, "cam_01.mp4")],
+                  [os.path.join(VIDEO_PATH, "cam_11.mp4")],
+                  [os.path.join(VIDEO_PATH, "cam_17.mp4")],
+                  [os.path.join(VIDEO_PATH, "cam_20.mp4")],]
     for x, mode in zip(VIDEO_LIST[args.index], MODE_LIST[args.index]):
         test_video(x, OUTPUT_PATH, mode)
 
