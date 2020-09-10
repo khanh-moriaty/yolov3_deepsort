@@ -364,8 +364,15 @@ def track_and_count(VIDEO_LIST):
     for VIDEO_NAME in VIDEO_LIST:
         track_and_count_core(VIDEO_NAME)
         
-def pipeline():
+import argparse        
 
+def pipeline():
+    parser = argparse.ArgumentParser(
+        description='')
+    parser.add_argument('--index', type=int, default=0,
+                        help='index of process')
+    args = parser.parse_args()
+    
     VIDEO_LIST = [
                   [1,2,3,15],
                   [6,7,8,19,25],
@@ -375,8 +382,9 @@ def pipeline():
                   [10,9],
                   ]
     VIDEO_LIST = [["cam_{:02d}".format(x) for x in video_list] for video_list in VIDEO_LIST]
-    pool = Pool(len(VIDEO_LIST))
-    pool.map(track_and_count, VIDEO_LIST)
+    track_and_count(VIDEO_LIST[args.index])
+    # pool = Pool(len(VIDEO_LIST))
+    # pool.map(track_and_count, VIDEO_LIST)
     
 def small_pipeline():
 
