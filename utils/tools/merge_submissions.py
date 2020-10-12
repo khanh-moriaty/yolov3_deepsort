@@ -15,8 +15,8 @@ def merge(SUBMISSION_DIR):
         fi = open(inp_path, 'r')
         lines = fi.read().splitlines()
         for line in lines:
-            content = line.split()[:4]
-            # content = line.split()
+            # content = line.split()[:4]
+            content = line.split()
             if content[3] == '0': continue
             content = ' '.join(content)
             fo.write(content + '\n')
@@ -25,4 +25,5 @@ def merge(SUBMISSION_DIR):
     fo.close()
 
 if __name__ == '__main__':
-    merge('/data/submission_output/')
+    # merge('/data/submission_output/')
+    merge('/storage/submissions/sub30')

@@ -172,15 +172,17 @@ def tracking(VIDEO_PATH, OUTPUT_PATH, DETECTION_PATH, config,
         height, width, _ = img.shape
         
         if OUTPUT_PATH is not None:
-            cv2.polylines(img, np.array([config["roi"]]), isClosed=True, color=(200,255,0), thickness=3)
-            for check_region in config["check_regions"]:
-                cv2.polylines(img, np.array([check_region]), isClosed=True, color=(227,211,232), thickness=3)
-            for moi_id, moi in enumerate(config["mois"]):
-                for [index_head, index_tail] in moi:
-                    cv2.arrowedLine(img, tuple(config["mois_head"][index_head]), tuple(config["mois_tail"][index_tail]), 
-                                    color=MOI_COLOR[moi_id][::-1], thickness=2, tipLength=0.01)
+            # cv2.polylines(img, np.array([config["roi"]]), isClosed=True, color=(200,255,0), thickness=3)
+            # for check_region in config["check_regions"]:
+            #     cv2.polylines(img, np.array([check_region]), isClosed=True, color=(227,211,232), thickness=3)
+            # for moi_id, moi in enumerate(config["mois"]):
+            #     for [index_head, index_tail] in moi:
+            #         cv2.arrowedLine(img, tuple(config["mois_head"][index_head]), tuple(config["mois_tail"][index_tail]), 
+            #                         color=MOI_COLOR[moi_id][::-1], thickness=2, tipLength=0.01)
             for index, bbox in enumerate(converted_boxes):
                 cv2.rectangle(img, (int(bbox[0]),int(bbox[1])), (int(bbox[0]+bbox[2]),int(bbox[1]+bbox[3])), (0,0,255), 1)
+                
+                # Renders class
                 # cv2.rectangle(img, (int(bbox[0]+bbox[2])+(len(classes[index])+1)*12,int(bbox[1]+bbox[3])), 
                 #               (int(bbox[0]+bbox[2]), int(bbox[1]+bbox[3])+20), (0,0,0), -1)
                 # cv2.putText(img, classes[index], (int(bbox[0]+bbox[2]), int(bbox[1]+bbox[3])+10), 0, 0.5,
@@ -305,7 +307,7 @@ def run_video(VIDEO_NAME):
     print('counting: {:.2f}'.format(time.time() - t))
     
     t = time.time()
-    visualize(track_history, OUTPUT_PATH, REID_OUTPUT_PATH)
+    # visualize(track_history, OUTPUT_PATH, REID_OUTPUT_PATH)
     print('reid: {:.2f}'.format(time.time() - t))
     
 
@@ -334,7 +336,7 @@ def main():
     # video_list = [14,24]
     # video_list = [16,18]
     
-    video_list = [17]
+    # video_list = [17]
     
     # video_list = [22]
     
@@ -409,5 +411,5 @@ def small_pipeline():
     
     
 if __name__ == "__main__":
-    pipeline()
-    # main()
+    # pipeline()
+    main()
